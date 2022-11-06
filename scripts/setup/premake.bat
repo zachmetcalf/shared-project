@@ -8,7 +8,7 @@
 title premake
 
 set cwd=%~dp0
-set projectdir=%cwd%..
+set projectdir=%cwd%..\..
 set thirdpartydir=%projectdir%\..\3rdparty
 set shareddir=%projectdir%\..\shared
 set toolsdir=%thirdpartydir%\tools
@@ -19,7 +19,7 @@ set action=vs2019
 set backend=dx11
 
 cd %toolsdir%
-.\premake\premake5 --file=%script% %action% --root=%projectdir% --3rdparty=%thirdpartydir% --shared=%shareddir% --gfxapi=%backend%
+.\premake\premake5 --file=%script% %action% --project=%projectdir% --3rdparty=%thirdpartydir% --shared=%shareddir% --gfxapi=%backend%
 
 if not %ERRORLEVEL% == 0 (
     echo premake failed

@@ -9,7 +9,7 @@
                 "command": ".\\clean.bat"
             },
             "options": {
-                "cwd": "${workspaceFolder}/scripts"
+                "cwd": "${workspaceFolder}/scripts/setup"
             },
             "problemMatcher": []
         },
@@ -21,7 +21,7 @@
                 "command": ".\\premake.bat"
             },
             "options": {
-                "cwd": "${workspaceFolder}/scripts"
+                "cwd": "${workspaceFolder}/scripts/setup"
             },
             "problemMatcher": []
         },
@@ -33,7 +33,7 @@
                 "command": ".\\setup.bat"
             },
             "options": {
-                "cwd": "${workspaceFolder}/scripts"
+                "cwd": "${workspaceFolder}/scripts/setup"
             },
             "problemMatcher": []
         }

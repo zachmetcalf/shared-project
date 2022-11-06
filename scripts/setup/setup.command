@@ -9,7 +9,7 @@ set +e
 echo -n -e "\033]0;setup\007"
 
 cwd=$(cd "$(dirname "$0")"; pwd)
-projectdir=$cwd/..
+projectdir=$cwd/../..
 thirdpartydir=$projectdir/../3rdparty
 shareddir=$projectdir/../shared
 toolsdir=$thirdpartydir/tools
@@ -35,7 +35,7 @@ SetupGitRepo shared main https://github.com/zachmetcalf/shared
 
 popd
 
-pushd $shareddir/scripts
+pushd $shareddir/scripts/setup
 
 source setup.command
 

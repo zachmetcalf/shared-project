@@ -1,50 +1,29 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-:: setup.bat
+:: clean.bat
 ::
 :: Zach Metcalf
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 @echo off
-title setup
+title clean
 
 set cwd=%~dp0
-set projectdir=%cwd%..
+set projectdir=%cwd%..\..
 set thirdpartydir=%projectdir%\..\3rdparty
 set shareddir=%projectdir%\..\shared
 set toolsdir=%thirdpartydir%\tools
 set scriptsdir=%projectdir%\scripts
 
-pushd %projectdir%\..
+set script=%scriptsdir%\premake\premake.lua
+set action=clean
 
-call :SetupGitRepo shared main https://github.com/zachmetcalf/shared
-
-popd
-
-pushd %shareddir%\scripts
-
-start /wait /b cmd /c setup.bat
-
-popd
+cd %toolsdir%
+.\premake\premake5 --file=%script% %action% --project=%projectdir% --3rdparty=%thirdpartydir% --shared=%shareddir%
 
 if not %ERRORLEVEL% == 0 (
-    echo setup failed
+    echo clean failed
     exit /b 1
 )
 
-echo setup succeeded
-exit /b 0
-
-:SetupGitRepo
-setlocal
-set repo=%~1
-set branch=%~2
-set url=%~3
-if not exist %repo% (
-    git clone --branch %branch% %url%
-) else (
-    pushd %repo%
-    git pull
-    popd
-)
-endlocal
+echo clean succeeded
 exit /b 0

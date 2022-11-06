@@ -5,8 +5,8 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 newoption {
-    trigger = "root",
-    description = "root",
+    trigger = "project",
+    description = "project",
 }
 
 newoption {
@@ -23,10 +23,10 @@ newaction {
     trigger = "clean",
     description = "clean",
     execute = function()
-        os.remove(path.join(_OPTIONS["root"], "shared_project.sln"))
-        os.rmdir(path.join(_OPTIONS["root"], "bin"))
-        os.rmdir(path.join(_OPTIONS["root"], "build"))
-        os.rmdir(path.join(_OPTIONS["root"], "shared_project.xcworkspace"))
+        os.remove(path.join(_OPTIONS["project"], "shared_project.sln"))
+        os.rmdir(path.join(_OPTIONS["project"], "bin"))
+        os.rmdir(path.join(_OPTIONS["project"], "build"))
+        os.rmdir(path.join(_OPTIONS["project"], "shared_project.xcworkspace"))
     end
 }
 
