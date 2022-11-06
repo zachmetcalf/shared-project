@@ -9,10 +9,11 @@ set +e
 echo -n -e "\033]0;premake\007"
 
 cwd=$(cd "$(dirname "$0")"; pwd)
-thirdpartydir=$cwd/../../3rdparty
-shareddir=$cwd/../../shared
+projectdir=$cwd/..
+thirdpartydir=$projectdir/../3rdparty
+shareddir=$projectdir/../shared
 toolsdir=$thirdpartydir/tools
-scriptsdir=$shareddir/scripts
+scriptsdir=$projectdir/scripts
 
 script=$scriptsdir/premake/premake.lua
 action=xcode4

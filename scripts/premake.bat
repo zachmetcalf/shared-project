@@ -8,10 +8,11 @@
 title premake
 
 set cwd=%~dp0
-set thirdpartydir=%cwd%..\..\3rdparty
-set shareddir=%cwd%..\..\shared
+set projectdir=%cwd%..
+set thirdpartydir=%projectdir%\..\3rdparty
+set shareddir=%projectdir%\..\shared
 set toolsdir=%thirdpartydir%\tools
-set scriptsdir=%shareddir%\scripts
+set scriptsdir=%projectdir%\scripts
 
 set script=%scriptsdir%\premake\premake.lua
 set action=vs2019
