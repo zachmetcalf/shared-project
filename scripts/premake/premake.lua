@@ -44,7 +44,7 @@ require "premake.libraries.slack_ext"
 
 platform = os.host();
 
-workspace "shared"
+workspace "shared_project"
     SetupWorkspace()
 
 group "libraries"

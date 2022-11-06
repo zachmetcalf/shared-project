@@ -19,7 +19,7 @@ set action=vs2019
 set backend=dx11
 
 cd %toolsdir%
-.\premake\premake5 --file=%script% %action% --root=%shareddir% --3rdparty=%thirdpartydir% --shared=%shareddir% --gfxapi=%backend%
+.\premake\premake5 --file=%script% %action% --root=%projectdir% --3rdparty=%thirdpartydir% --shared=%shareddir% --gfxapi=%backend%
 
 if not %ERRORLEVEL% == 0 (
     echo premake failed

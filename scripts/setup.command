@@ -35,9 +35,9 @@ SetupGitRepo shared main https://github.com/zachmetcalf/shared
 
 popd
 
-pushd %shareddir%
+pushd $shareddir/scripts
 
-source scripts\setup.command
+source setup.command
 
 popd
 

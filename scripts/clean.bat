@@ -18,7 +18,7 @@ set script=%scriptsdir%\premake\premake.lua
 set action=clean
 
 cd %toolsdir%
-.\premake\premake5 --file=%script% %action% --root=%shareddir% --3rdparty=%thirdpartydir% --shared=%shareddir%
+.\premake\premake5 --file=%script% %action% --root=%projectdir% --3rdparty=%thirdpartydir% --shared=%shareddir%
 
 if not %ERRORLEVEL% == 0 (
     echo clean failed

@@ -20,9 +20,9 @@ call :SetupGitRepo shared main https://github.com/zachmetcalf/shared
 
 popd
 
-pushd %shareddir%
+pushd %shareddir%\scripts
 
-start /wait /b cmd /c scripts\setup.bat
+start /wait /b cmd /c setup.bat
 
 popd
 

@@ -20,7 +20,7 @@ action=xcode4
 backend=metal
 
 cd $toolsdir
-./premake/premake5 --file=$script $action --root=$shareddir --3rdparty=$thirdpartydir --shared=$shareddir --gfxapi=$backend
+./premake/premake5 --file=$script $action --root=$projectdir --3rdparty=$thirdpartydir --shared=$shareddir --gfxapi=$backend
 
 error=$?
 if [ $error != 0 ]; then
