@@ -12,7 +12,9 @@
 			".vs/**": true,
 			"bin/**": true,
 			"build/**": true,
-			"**/__pycache__": true
+			"**.sln": true,
+			"**/__pycache__": true,
+			"**.xcworkspace": true
 		}
 	}
 }
