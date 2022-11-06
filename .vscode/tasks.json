@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "./clean.command",
+            "windows": {
+                "command": ".\\clean.bat"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/scripts"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "premake",
+            "type": "shell",
+            "command": "./premake.command",
+            "windows": {
+                "command": ".\\premake.bat"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/scripts"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "setup",
+            "type": "shell",
+            "command": "./setup.command",
+            "windows": {
+                "command": ".\\setup.bat"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/scripts"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
