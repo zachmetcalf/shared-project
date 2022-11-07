@@ -6,7 +6,7 @@
 ----------------
 
 ### Install
-1. see [shared_project install](shared_project.md) 
+1. see [shared_project.md](shared_project.md) 
 
 ### References
 Library | Reference
