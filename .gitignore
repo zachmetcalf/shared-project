@@ -14,9 +14,23 @@ build/
 # visual studio
 .vs/
 *.aps
+*.ilk
+*.iobj
+*.ipdb
+*.log
+*.obj
+*.opendb
+*.opensdf
+*.pch
+*.pdb
+*.sdf
 *.sln
+*.suo
+*.tlog
+*.user
 
 # xcode
+xcuserdata/
 *.xcworkspace/
 
 # python
