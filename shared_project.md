@@ -18,8 +18,3 @@ template repo for projects utilizing shared library
     git checkout main
     git merge shared_project/main --allow-unrelated-histories
 ```
-
-### References
-Library | Reference
----------------- | ----------------
-shared | https://github.com/zachmetcalf/shared
