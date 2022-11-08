@@ -5,8 +5,8 @@
 
 ----------------
 
-### Install
-1. see [shared_project.md](docs/shared_project.md) 
+### Docs
+[shared_project.md](docs/shared_project.md) 
 
 ### References
 Library | Reference
