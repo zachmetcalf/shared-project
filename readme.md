@@ -6,7 +6,7 @@
 ----------------
 
 ### Docs
-[shared_project.md](docs/shared_project.md) 
+- [shared_project.md](docs/shared_project.md) 
 
 ### References
 Library | Reference
