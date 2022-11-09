@@ -12,7 +12,9 @@ template repo for projects utilizing shared library
     git remote add shared_project https://github.com/zachmetcalf/shared_project
     git remote set-url --push shared_project no_push
 ```
-3. fetch, merge changes from shared_project remote
+
+### Update
+1. fetch, merge changes from shared_project remote
 ```
     git fetch --all
     git checkout main
