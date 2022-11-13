@@ -48,6 +48,18 @@
                 "cwd": "${workspaceFolder}/scripts/setup"
             },
             "problemMatcher": []
+        },
+        {
+            "label": "terminal",
+            "type": "shell",
+            "command": "./terminal.command",
+            "windows": {
+                "command": "start terminal.bat"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/scripts"
+            },
+            "problemMatcher": []
         }
     ]
 }
