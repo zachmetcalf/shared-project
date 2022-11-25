@@ -32,12 +32,16 @@ newaction {
 
 package.path = package.path .. ";" .. path.join(path.join(_OPTIONS["shared"], "scripts"), "?.lua")
 
-require "premake.demos.console_demo"
-require "premake.demos.imgui_demo"
-require "premake.demos.test_demo"
+require "premake.projects.console_demo"
+require "premake.projects.console_template"
+require "premake.projects.imgui_demo"
+require "premake.projects.imgui_template"
+require "premake.projects.test_demo"
+require "premake.projects.test_template"
 require "premake.interfaces.workspace"
 require "premake.libraries.cpprest_ext"
 require "premake.libraries.curl_ext"
+require "premake.libraries.imgui_ext"
 require "premake.libraries.rapidjson_ext"
 require "premake.libraries.shared"
 require "premake.libraries.slack_ext"
@@ -67,12 +71,23 @@ project "slack_ext"
 group "demos"
 
 project "console_demo"
-    SetupConsoleDemoProject()
+    SetupConsoleDemo()
 
 project "imgui_demo"
-    SetupImGuiDemoProject()
+    SetupImGuiDemo()
 
 project "test_demo"
-    SetupTestDemoProject()
+    SetupTestDemo()
+
+group "templates"
+
+project "console_template"
+    SetupConsoleTemplate()
+    
+project "imgui_template"
+    SetupImGuiTemplate()
+    
+project "test_template"
+    SetupTestTemplate()
 
 group ""
