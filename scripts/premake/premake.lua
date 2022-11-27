@@ -59,6 +59,9 @@ project "cpprest_ext"
 project "curl_ext"
     BuildCurlExt()
 
+project "imgui_ext"
+    BuildImGuiExt()
+
 project "rapidjson_ext"
     BuildRapidJsonExt()
 
