@@ -9,15 +9,5 @@
 		{
 			"path": "../shared_project"
 		}
-	],
-	"settings": {
-		"files.exclude": {
-			".vs/**": true,
-			"bin/**": true,
-			"build/**": true,
-			"**.sln": true,
-			"**/__pycache__": true,
-			"**.xcworkspace": true
-		}
-	}
+	]
 }

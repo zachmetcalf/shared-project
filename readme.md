@@ -12,6 +12,7 @@
     git remote add shared_project https://github.com/zachmetcalf/shared_project
     git remote set-url --push shared_project no_push
 ```
+3. run setup script
 
 ### Update
 1. fetch, merge changes from shared_project remote

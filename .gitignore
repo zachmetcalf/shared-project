@@ -5,34 +5,14 @@
 ################################################################################################################################################################
 
 # directories
-bin/
-build/
+/3rdparty/
+/bin/
+/build/
+/install/
 
 # files
 *.DS_Store
 
 # visual studio
-.vs/
 *.aps
-*.ilk
-*.iobj
-*.ipdb
-*.log
-*.obj
-*.opendb
-*.opensdf
-*.pch
-*.pdb
-*.sdf
-*.sln
-*.suo
-*.tlog
-*.user
-
-# xcode
-xcuserdata/
-*.xcworkspace/
-
-# python
-.venv/
-*__pycache__
+/.vs/

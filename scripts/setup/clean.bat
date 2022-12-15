@@ -9,16 +9,16 @@ title clean
 
 set cwd=%~dp0
 set projectdir=%cwd%..\..
-set thirdpartydir=%projectdir%\..\3rdparty
-set shareddir=%projectdir%\..\shared
-set toolsdir=%thirdpartydir%\tools
-set scriptsdir=%projectdir%\scripts
 
-set script=%scriptsdir%\premake\premake.lua
-set action=clean
+pushd %projectdir%
 
-cd %toolsdir%
-.\premake\premake5 --file=%script% %action% --project=%projectdir% --3rdparty=%thirdpartydir% --shared=%shareddir%
+rmdir .vs /s /q
+rmdir 3rdparty /s /q
+rmdir bin /s /q
+rmdir build /s /q
+rmdir install /s /q
+
+popd
 
 if not %ERRORLEVEL% == 0 (
     echo clean failed

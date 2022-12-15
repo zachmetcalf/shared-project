@@ -9,10 +9,7 @@ title setup
 
 set cwd=%~dp0
 set projectdir=%cwd%..\..
-set thirdpartydir=%projectdir%\..\3rdparty
 set shareddir=%projectdir%\..\shared
-set toolsdir=%thirdpartydir%\tools
-set scriptsdir=%projectdir%\scripts
 
 pushd %projectdir%\..
 

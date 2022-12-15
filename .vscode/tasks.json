@@ -14,30 +14,6 @@
             "problemMatcher": []
         },
         {
-            "label": "open",
-            "type": "shell",
-            "command": "open ${workspaceFolderBasename}.xcworkspace",
-            "windows": {
-                "command": ".\\${workspaceFolderBasename}.sln"
-            },
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "problemMatcher": []
-        },
-        {
-            "label": "premake",
-            "type": "shell",
-            "command": "./premake.command",
-            "windows": {
-                "command": ".\\premake.bat"
-            },
-            "options": {
-                "cwd": "${workspaceFolder}/scripts/setup"
-            },
-            "problemMatcher": []
-        },
-        {
             "label": "setup",
             "type": "shell",
             "command": "./setup.command",
@@ -54,10 +30,10 @@
             "type": "shell",
             "command": "./terminal.command",
             "windows": {
-                "command": "start terminal.bat"
+                "command": ".\\terminal.bat"
             },
             "options": {
-                "cwd": "${workspaceFolder}/scripts"
+                "cwd": "${workspaceFolder}/scripts/setup"
             },
             "problemMatcher": []
         }
