@@ -10,13 +10,19 @@ echo -n -e "\033]0;clean\007"
 
 cwd=$(cd "$(dirname "$0")"; pwd)
 projectdir=$cwd/../..
+shareddir=$projectdir/../shared
 
 pushd $projectdir
 
-rm -rf 3rdparty
 rm -rf bin
 rm -rf build
 rm -rf install
+
+popd
+
+pushd $shareddir/scripts/setup
+
+source clean.command
 
 popd
 
