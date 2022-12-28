@@ -10,6 +10,9 @@
 		},
 		{
 			"name": "shared_project",
+			"path": "../shared_project"
+		},
+		{
 			"path": "."
 		}
 	]
