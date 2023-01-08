@@ -9,8 +9,8 @@
 			"path": "../shared"
 		},
 		{
-			"name": "shared_project",
-			"path": "../shared_project"
+			"name": "shared-project",
+			"path": "../shared-project"
 		},
 		{
 			"path": "."

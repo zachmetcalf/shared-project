@@ -7,10 +7,10 @@
 
 ### Install
 1. see shared (https://github.com/zachmetcalf/shared)
-2. add shared_project remote
+2. add shared-project remote
 ```
-    git remote add shared_project https://github.com/zachmetcalf/shared_project
-    git remote set-url --push shared_project no_push
+    git remote add shared-project https://github.com/zachmetcalf/shared_project
+    git remote set-url --push shared-project no_push
 ```
 3. run setup script
 
@@ -19,7 +19,7 @@
 ```
     git fetch --all
     git checkout main
-    git merge shared_project/main --allow-unrelated-histories
+    git merge shared-project/main --allow-unrelated-histories
 ```
 
 ### References
