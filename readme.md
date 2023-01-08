@@ -10,7 +10,7 @@
 2. add shared-project remote
 ```
     git remote add shared-project https://github.com/zachmetcalf/shared_project
-    git remote set-url --push shared-project no_push
+    git remote set-url --push shared-project no-push
 ```
 3. run setup script
 
