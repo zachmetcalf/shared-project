@@ -9,13 +9,13 @@
 1. see shared (https://github.com/zachmetcalf/shared)
 2. add shared-project remote
 ```
-    git remote add shared-project https://github.com/zachmetcalf/shared_project
+    git remote add shared-project https://github.com/zachmetcalf/shared-project
     git remote set-url --push shared-project no-push
 ```
 3. run setup script
 
 ### Update
-1. fetch, merge changes from shared_project remote
+1. fetch, merge changes from shared-project remote
 ```
     git fetch --all
     git checkout main
@@ -26,3 +26,4 @@
 Library | Reference
 ---------------- | ----------------
 shared | https://github.com/zachmetcalf/shared
+shared-project | https://github.com/zachmetcalf/shared-project
