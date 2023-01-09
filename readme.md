@@ -22,6 +22,19 @@
     git merge shared-project/main --allow-unrelated-histories
 ```
 
+### Open
+1. set CMakeWorkspaceSettings.json
+```
+{
+  "enableCMake": true,
+  "sourceDirectory": [
+    "shared",
+    "shared-games",
+    "shared-project"
+  ]
+}
+```
+
 ### References
 Library | Reference
 ---------------- | ----------------

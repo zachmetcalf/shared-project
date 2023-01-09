@@ -38,11 +38,11 @@
 			"variables": [
 				{
 					"name": "BUILD_SHARED_DEMOS",
-					"value": "ON"
+					"value": "OFF"
 				},
 				{
 					"name": "BUILD_SHARED_TEMPLATES",
-					"value": "ON"
+					"value": "OFF"
 				},
 				{
 					"name": "WINDOWS_TOOLCHAIN_FILE",
