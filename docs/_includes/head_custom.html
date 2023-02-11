@@ -1,0 +1,46 @@
+<link id="dark-css" rel="stylesheet" href="/assets/css/just-the-docs-dark.css">
+
+<script>
+	function customSetColorScheme(colorScheme) {
+		if (colorScheme === 'auto') {
+			colorScheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
+		}
+		if (colorScheme === 'light') {
+			document.getElementById("dark-css").disabled = true;
+		} else {
+			document.getElementById("dark-css").disabled = false;
+		}
+	}
+	
+	if(localStorage.getItem("color-scheme") === null) {
+		const newColorScheme = 'auto';
+		customSetColorScheme(newColorScheme);
+		localStorage.setItem("color-scheme",newColorScheme);
+	} else {
+		customSetColorScheme(localStorage.getItem("color-scheme"));
+	}
+
+	window.addEventListener('load', function () {
+		const toggleDarkMode = document.querySelector('#toggle-theme-link');
+		toggleDarkMode.textContent = localStorage.getItem("color-scheme");
+		jtd.addEvent(toggleDarkMode, 'click', function(){
+			var newColorScheme = localStorage.getItem("color-scheme");
+			if (newColorScheme === 'auto') {
+				newColorScheme = 'light';
+			} else if (newColorScheme == 'light') {
+				newColorScheme = 'dark';
+			} else {
+				newColorScheme = 'auto';
+			}
+			customSetColorScheme(newColorScheme);
+			toggleDarkMode.textContent = newColorScheme; 
+			localStorage.setItem("color-scheme",newColorScheme);
+		});
+	});
+
+	window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+		if(localStorage.getItem("color-scheme") === 'auto') {
+			customSetColorScheme('auto');
+		}
+	});
+</script>
