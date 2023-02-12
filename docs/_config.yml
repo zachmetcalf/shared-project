@@ -1,36 +1,17 @@
-title: "Zach Metcalf"
-remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3
-color_scheme: nil
+title: shared-project
+description: shared-project
+theme: just-the-docs
+color_scheme: dark
+
 search_enabled: false
-
-aux_links:
-  "Google":
-    - "https://www.google.com"
-
-
-aux_links_new_tab: true
 
 callouts:
   note:
-    title: NOTE
+    title: note
     color: blue
   warn:
-    title: WARNING
+    title: warning
     color: yellow
   danger:
-    title: DANGER
+    title: danger
     color: red
-  test:
-    title: TEST IT!
-    color: green
-
-# Collections for website data
-collections:
-  schedules:
-# Default layouts for each collection type
-defaults:
-  - scope:
-      path: ''
-      type: schedules
-    values:
-      layout: schedule
