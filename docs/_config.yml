@@ -1,7 +1,9 @@
-title: shared-project
-description: shared-project
-theme: just-the-docs
+title: "Zach Metcalf"
+remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3
+color_scheme: nil
+favicon_ico: "/data/icons/zmetcalf_icon0.png"
 
+aux_links_new_tab: true
 search_enabled: false
 
 callouts:
