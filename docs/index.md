@@ -1,7 +1,10 @@
 ---
 title: home
 layout: home
-nav_order: 100
+nav_order: 0
 ---
 
-Hello World
+# *TEMPLATE NAME*
+## Zach Metcalf
+
+*template description*

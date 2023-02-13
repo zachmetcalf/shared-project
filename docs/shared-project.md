@@ -1,12 +1,12 @@
-# *TEMPLATE NAME*
-## Zach Metcalf
-
-*template description*
-
-----------------
+---
+title: "shared-project"
+parent: "setup"
+has_children: false
+nav_order: 0
+---
 
 ### Install
-1. see shared (https://github.com/zachmetcalf/shared)
+1. see [shared](https://github.com/zachmetcalf/shared)
 2. add shared-project remote
 ```
     git remote add shared-project https://github.com/zachmetcalf/shared-project

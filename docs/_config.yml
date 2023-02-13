@@ -1,11 +1,18 @@
-title: "Zach Metcalf"
+title: "*TEMPLATE NAME*"
+
 remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3
 color_scheme: nil
-favicon_ico: "/data/icons/zmetcalf_icon0.png"
 
 aux_links_new_tab: true
 search_enabled: false
 
+aux_links:
+  "shared":
+    - https://github.com/zachmetcalf/shared
+  "shared-project":
+    - https://github.com/zachmetcalf/shared-project
+
+  
 callouts:
   note:
     title: note
