@@ -4,7 +4,7 @@ layout: home
 nav_order: 0
 ---
 
-# *TEMPLATE NAME*
-## Zach Metcalf
+# **TEMPLATE NAME**
+## *Template Author*
 
 *template description*

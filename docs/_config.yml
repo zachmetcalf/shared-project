@@ -1,4 +1,4 @@
-title: "*TEMPLATE NAME*"
+title: "**TEMPLATE NAME**"
 
 remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3
 color_scheme: nil
@@ -12,7 +12,6 @@ aux_links:
   "shared-project":
     - https://github.com/zachmetcalf/shared-project
 
-  
 callouts:
   note:
     title: note
