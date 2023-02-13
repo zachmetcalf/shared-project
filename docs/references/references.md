@@ -8,5 +8,5 @@ nav_order: 2
 
 | **Library** | **Reference** |
 | :----------------: | :----------------: |
-| shared | https://github.com/zachmetcalf/shared |
-| shared-project | https://github.com/zachmetcalf/shared-project |
+| shared | (https://github.com/zachmetcalf/shared) |
+| shared-project | (https://github.com/zachmetcalf/shared-project) |
