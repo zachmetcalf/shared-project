@@ -6,4 +6,4 @@ nav_order: 1
 
 # Setup
 
-The setup instructions are slight different depending on your selected platform (PC or Mac)
+The setup instructions are slightly different depending on your selected platform (PC or Mac)

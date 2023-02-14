@@ -1,13 +1,14 @@
 ---
-title: "open (Visual Studio)"
+title: "open"
 parent: "setup"
 has_children: false
 nav_order: 2
 ---
 
-# Open
+# Working in Visual Studio
 
-1. set CMakeWorkspaceSettings.json
+To open your projects in Visual Studio, set the contents to `.vs\CMakeWorkspaceSettings.json` to the following:
+
 ```json
 {
   "enableCMake": true,
@@ -17,3 +18,7 @@ nav_order: 2
   ]
 }
 ```
+
+# Working in Visual Studio Code
+
+To open your projects in Visual Studio Code, open the workspace file: `vscode.code-workspace`
