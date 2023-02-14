@@ -7,8 +7,6 @@ nav_order: 1
 
 # Update
 
-To update the project:
-
 ## Fetch Updates via Git
 
 To receive updates from the template project, fetch and merge changes from `shared-project` remote 

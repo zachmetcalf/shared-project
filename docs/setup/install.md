@@ -7,17 +7,22 @@ nav_order: 0
 
 # Install
 
-To install the project:
+## shared
 
-One time setup
+{: .warn}
+See [shared](https://github.com/zachmetcalf/shared) for instructions on installing the shared repo
 
-## System Requirements
+## shared-project
 
-1. see [shared](https://github.com/zachmetcalf/shared)
-2. add shared-project remote
+### Setup Remote via Git
+
+To receive updates from the template project, add the `shared-project` remote 
+
 ```
     git remote add shared-project https://github.com/zachmetcalf/shared-project
     git remote set-url --push shared-project no-push
 ```
-3. run setup script
-```
+
+### Run Setup Script
+
+Run the setup script in `scripts` to install and configure the project
