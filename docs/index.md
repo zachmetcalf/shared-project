@@ -4,7 +4,7 @@ layout: home
 nav_order: 0
 ---
 
-# **TEMPLATE NAME**
-## *Template Author*
+# **TEMPLATE**
+## *Template*
 
-*template description*
+*template*
