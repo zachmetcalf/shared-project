@@ -16,7 +16,8 @@ To open your projects in Visual Studio, set the contents of `.vs\CMakeWorkspaceS
   "enableCMake": true,
   "sourceDirectory": [
     "shared",
-    "shared-project"
+    "shared-project",
+    ...
   ]
 }
 ```
