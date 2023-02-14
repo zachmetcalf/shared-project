@@ -7,6 +7,8 @@ nav_order: 0
 
 # Install
 
+To install the project:
+
 One time setup
 
 ## System Requirements

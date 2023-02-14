@@ -5,6 +5,10 @@ has_children: false
 nav_order: 2
 ---
 
+# Open
+
+To open the project:
+
 # Working in Visual Studio
 
 To open your projects in Visual Studio, set the contents to `.vs\CMakeWorkspaceSettings.json` to the following:
@@ -18,6 +22,8 @@ To open your projects in Visual Studio, set the contents to `.vs\CMakeWorkspaceS
   ]
 }
 ```
+
+Then, you can right-click the shared folder and select "Open with Visual Studio"
 
 # Working in Visual Studio Code
 

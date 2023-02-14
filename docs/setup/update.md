@@ -5,7 +5,11 @@ has_children: false
 nav_order: 1
 ---
 
-# Fetch Updates via Git
+# Update
+
+To update the project:
+
+## Fetch Updates via Git
 
 To receive updates from the template project, fetch and merge changes from `shared-project` remote 
 
