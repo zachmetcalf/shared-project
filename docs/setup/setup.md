@@ -4,8 +4,6 @@ has_children: true
 nav_order: 1
 ---
 
-### References
-Library | Reference
----------------- | ----------------
-shared | https://github.com/zachmetcalf/shared
-shared-project | https://github.com/zachmetcalf/shared-project
+# Setup
+
+The setup instructions are slight different depending on your selected platform (PC or Mac)
