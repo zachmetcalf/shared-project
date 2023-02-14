@@ -9,7 +9,7 @@ nav_order: 0
 
 ## shared
 
-{: .warn}
+{: .note}
 See [shared](https://github.com/zachmetcalf/shared) for instructions on installing the shared repo
 
 ## shared-project
@@ -25,4 +25,4 @@ To receive updates from the template project, add the `shared-project` remote
 
 ### Run Setup Script
 
-Run the setup script in `scripts` to install and configure the project
+Run the setup script in the `scripts` folder to install and configure the project
