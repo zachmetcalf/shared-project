@@ -10,6 +10,7 @@ nav_order: 3
 
 {: .note}
 > comments in code adhere to the paradigm in the following commenting examples
+
 ```c++
     // <shared> backlog - *description* </shared>
     // <shared> change - *description* </shared>

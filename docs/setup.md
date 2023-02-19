@@ -6,12 +6,36 @@ nav_order: 1
 
 # setup
 
+{: .warn}
+setup instructions may differ depending on platform (windows or osx), ide (vs or vscode)
+
 ## install
 
-{: .warn}
-See [shared](https://github.com/zachmetcalf/shared) for instructions on installing the shared repo
+{: .note}
+windows only
 
-run the setup script in the `scripts` folder to install, configure the project
+1. install cmake, git
+```
+    winget install -e --id Kitware.CMake
+    winget install --id Git.Git -e --source winget
+    winget install --id GitHub.cli
+```
+
+{: .note}
+osx only
+
+2. (osx) install brew, xcode
+```
+    xcode-select --install
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+{: .note}
+vscode only only
+
+3. install vscode extensions `c++`, `cmake`, `lldb`
+
+4. run setup script in the `scripts` folder
 
 ## update
 
@@ -30,11 +54,11 @@ fetch, merge changes from the `shared-project` remote
     git merge shared-project/main --allow-unrelated-histories
 ```
 
-# open
+## open
 
 ### visual studio
 
-set the contents of `.vs\CMakeWorkspaceSettings.json` to:
+set the contents of `.vs\CMakeWorkspaceSettings.json` to the following:
 
 ```json
 {
