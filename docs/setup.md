@@ -6,36 +6,35 @@ nav_order: 1
 
 # setup
 
-{: .warn}
+{: .note}
 setup instructions may differ depending on platform (windows or osx), ide (vs or vscode)
 
 ## install
 
-{: .note}
-windows only
+### windows
 
-1. install cmake, git
+install cmake, git
 ```
     winget install -e --id Kitware.CMake
     winget install --id Git.Git -e --source winget
     winget install --id GitHub.cli
 ```
 
-{: .note}
-osx only
+### osx
 
-2. (osx) install brew, xcode
+install brew, xcode commandline tools
 ```
     xcode-select --install
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-{: .note}
-vscode only only
+### vscode
 
-3. install vscode extensions `c++`, `cmake`, `lldb`
+install vscode extensions `c++`, `cmake`, `lldb`
 
-4. run setup script in the `scripts` folder
+## setup
+
+run setup script in the `scripts` folder
 
 ## update
 
