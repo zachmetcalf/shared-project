@@ -4,7 +4,6 @@ layout: home
 nav_order: 0
 ---
 
-# **TEMPLATE**
-## *Template*
+# shared-project
 
-*template*
+a library of shared utilities geared toward spinning up prototype c++ projects with ImGui
