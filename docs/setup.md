@@ -22,7 +22,7 @@ install cmake, git
 
 ### osx
 
-install brew, xcode commandline tools
+install brew, xcode tools
 ```
     xcode-select --install
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -30,7 +30,7 @@ install brew, xcode commandline tools
 
 ### vscode
 
-install vscode extensions `c++`, `cmake`, `lldb`
+install vscode extensions: `c++`, `cmake`, `lldb`
 
 ## setup
 

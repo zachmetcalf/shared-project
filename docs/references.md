@@ -4,14 +4,16 @@ has_children: false
 nav_order: 2
 ---
 
-# shared
+# references
+
+## shared
 
 | **Project** | **Reference** |
 | :----------------: | :----------------: |
 | shared | [https://github.com/zachmetcalf/shared](https://github.com/zachmetcalf/shared) |
 | shared-project | [https://github.com/zachmetcalf/shared-project](https://github.com/zachmetcalf/shared-project) |
 
-# languages
+## languages
 
 | **Language** | **Reference** |
 | :----------------: | :----------------: |
@@ -19,7 +21,7 @@ nav_order: 2
 | [go](https://go.dev/doc/) | [https://github.com/avelino/awesome-go](https://github.com/avelino/awesome-go) |
 | [python](https://docs.python.org/3/) | [https://github.com/vinta/awesome-python](https://github.com/vinta/awesome-python) |
 
-# libraries
+## libraries
 
 | **Library** | **Reference** |
 | :----------------: | :----------------: |
