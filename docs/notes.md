@@ -9,7 +9,7 @@ nav_order: 3
 ## comments
 
 {: .note}
-> comments in code adhere to the paradigm in the following commenting examples
+> comments in code adhere to the paradigm in the following commenting examples:
 
 ```c++
     // <shared> backlog - *description* </shared>
