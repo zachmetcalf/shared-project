@@ -5,5 +5,5 @@
 ################################################################################################################################################################
 
 ---
-Checks: '-*,clang-analyzer-*,clang-diagnostic-*,portability-*,readability-*'
+Checks: '-*,clang-analyzer-*,clang-diagnostic-*,portability-*'
 WarningsAsErrors: ''
