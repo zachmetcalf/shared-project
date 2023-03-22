@@ -16,10 +16,6 @@
 					"value": "OFF"
 				},
 				{
-					"name": "BUILD_SHARED_TEMPLATES",
-					"value": "OFF"
-				},
-				{
 					"name": "WINDOWS_TOOLCHAIN_FILE",
 					"value": "${projectDir}\\..\\3rdparty\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake"
 				}
@@ -38,10 +34,6 @@
 			"variables": [
 				{
 					"name": "BUILD_SHARED_DEMOS",
-					"value": "OFF"
-				},
-				{
-					"name": "BUILD_SHARED_TEMPLATES",
 					"value": "OFF"
 				},
 				{
