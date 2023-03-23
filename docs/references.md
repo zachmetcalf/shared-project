@@ -18,8 +18,6 @@ nav_order: 2
 | **Language** | **Reference** |
 | :----------------: | :----------------: |
 | [c++](https://cplusplus.com/doc/) | [https://github.com/fffaraz/awesome-cpp](https://github.com/fffaraz/awesome-cpp) |
-| [go](https://go.dev/doc/) | [https://github.com/avelino/awesome-go](https://github.com/avelino/awesome-go) |
-| [python](https://docs.python.org/3/) | [https://github.com/vinta/awesome-python](https://github.com/vinta/awesome-python) |
 
 ## libraries
 
@@ -39,10 +37,8 @@ nav_order: 2
 | implot | [https://github.com/epezent/implot](https://github.com/epezent/implot) |
 | inifile-cpp | [https://github.com/Rookfighter/inifile-cpp](https://github.com/Rookfighter/inifile-cpp) |
 | Just the Docs | [https://just-the-docs.github.io/just-the-docs/](https://just-the-docs.github.io/just-the-docs/) |
-| notion api | [https://developers.notion.com/reference/intro](https://developers.notion.com/reference/intro) |
 | rapidjson | [https://github.com/Tencent/rapidjson/](https://github.com/Tencent/rapidjson/) |
 | slack api | [https://api.slack.com/methods](https://api.slack.com/methods) |
-| slack bolt | [https://api.slack.com/tools/bolt](https://api.slack.com/tools/bolt) |
 | stb | [https://github.com/nothings/stb](https://github.com/nothings/stb) |
 | vcpkg | [https://github.com/microsoft/vcpkg](https://github.com/microsoft/vcpkg) |
 | vscode-cmake-tools | [https://github.com/microsoft/vscode-cmake-tools/](https://github.com/microsoft/vscode-cmake-tools/) |
