@@ -28,15 +28,12 @@ nav_order: 2
 | cmake | [https://cmake.org/](https://cmake.org/) |
 | cpprestsdk | [https://github.com/microsoft/cpprestsdk](https://github.com/microsoft/cpprestsdk) |
 | curl | [https://curl.se/libcurl/](https://curl.se/libcurl/) |
-| dirent | [https://github.com/tronkko/dirent](https://github.com/tronkko/dirent) |
 | git-cli | [https://github.com/cli/cli](https://github.com/cli/cli) |
 | git-scm | [https://git-scm.com/](https://git-scm.com/) |
 | glfw | [https://github.com/glfw/glfw](https://github.com/glfw/glfw) |
 | IconFontCppHeaders | [https://github.com/juliettef/IconFontCppHeaders](https://github.com/juliettef/IconFontCppHeaders) |
 | imgui | [https://github.com/ocornut/imgui](https://github.com/ocornut/imgui) |
-| imgui_toggle | [https://github.com/cmdwtf/imgui_toggle](https://github.com/cmdwtf/imgui_toggle) |
 | implot | [https://github.com/epezent/implot](https://github.com/epezent/implot) |
-| imspinner | [https://github.com/dalerank/imspinner](https://github.com/dalerank/imspinner)
 | inifile-cpp | [https://github.com/Rookfighter/inifile-cpp](https://github.com/Rookfighter/inifile-cpp) |
 | Just the Docs | [https://just-the-docs.github.io/just-the-docs/](https://just-the-docs.github.io/just-the-docs/) |
 | rapidjson | [https://github.com/Tencent/rapidjson/](https://github.com/Tencent/rapidjson/) |
