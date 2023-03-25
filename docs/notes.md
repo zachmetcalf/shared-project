@@ -15,6 +15,5 @@ nav_order: 3
     // <shared> change - *description* </shared>
     // <shared> note - *description* </shared>
     // <shared> todo - *description* </shared>
-    // <shared> warning - *description* </shared>
     // <shared> won't fix - *description* </shared>
 ```
