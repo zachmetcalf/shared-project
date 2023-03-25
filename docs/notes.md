@@ -12,9 +12,9 @@ nav_order: 3
 > comments in code adhere to the paradigm in the following commenting examples:
 
 ```c++
-    // <shared> backlog - *description* </shared>
     // <shared> change - *description* </shared>
     // <shared> note - *description* </shared>
     // <shared> todo - *description* </shared>
+    // <shared> warning - *description* </shared>
     // <shared> won't fix - *description* </shared>
 ```
