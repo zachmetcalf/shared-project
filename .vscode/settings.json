@@ -3,7 +3,6 @@
     "BUILD_SHARED_DEMOS": "OFF",
     "BUILD_SHARED_TESTS": "OFF",
     "MACOSX_OPENSSL_ROOT_DIR": "/usr/local/opt/openssl@1.1",
-    "MACOSX_CURL_ROOT_DIR": "/usr/local/opt/curl",
     "WINDOWS_TOOLCHAIN_FILE": "${workspaceFolder}\\..\\3rdparty\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake"
   },
   "search.exclude": {
