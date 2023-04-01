@@ -34,6 +34,7 @@ nav_order: 2
 | IconFontCppHeaders | [https://github.com/juliettef/IconFontCppHeaders](https://github.com/juliettef/IconFontCppHeaders) |
 | imgui | [https://github.com/ocornut/imgui](https://github.com/ocornut/imgui) |
 | implot | [https://github.com/epezent/implot](https://github.com/epezent/implot) |
+| imspinner | [https://github.com/dalerank/imspinner](https://github.com/dalerank/imspinner) |
 | inifile-cpp | [https://github.com/Rookfighter/inifile-cpp](https://github.com/Rookfighter/inifile-cpp) |
 | Just the Docs | [https://just-the-docs.github.io/just-the-docs/](https://just-the-docs.github.io/just-the-docs/) |
 | rapidjson | [https://github.com/Tencent/rapidjson/](https://github.com/Tencent/rapidjson/) |
