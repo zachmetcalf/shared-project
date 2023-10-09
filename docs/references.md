@@ -33,6 +33,7 @@ nav_order: 2
 | glfw | [https://github.com/glfw/glfw](https://github.com/glfw/glfw) |
 | IconFontCppHeaders | [https://github.com/juliettef/IconFontCppHeaders](https://github.com/juliettef/IconFontCppHeaders) |
 | imgui | [https://github.com/ocornut/imgui](https://github.com/ocornut/imgui) |
+| ImGuiFileDialog | [https://github.com/aiekick/ImGuiFileDialog](https://github.com/aiekick/ImGuiFileDialog) |
 | implot | [https://github.com/epezent/implot](https://github.com/epezent/implot) |
 | imspinner | [https://github.com/dalerank/imspinner](https://github.com/dalerank/imspinner) |
 | inifile-cpp | [https://github.com/Rookfighter/inifile-cpp](https://github.com/Rookfighter/inifile-cpp) |
