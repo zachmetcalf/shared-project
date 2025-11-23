@@ -6,4 +6,4 @@ nav_order: 0
 
 # shared
 
-a library of shared utilities geared toward spinning up prototype c++ projects with ImGui
+a library of shared utilities geared for quickly spinning up prototype c++ projects with ImGui
