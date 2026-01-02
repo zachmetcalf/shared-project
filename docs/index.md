@@ -22,7 +22,6 @@ a library of shared utilities geared for quickly spinning up prototype C++ proje
 | Catch2 | [https://github.com/catchorg/Catch2](https://github.com/catchorg/Catch2) |
 | cmake | [https://cmake.org/](https://cmake.org/) |
 | curl | [https://curl.se/libcurl/](https://curl.se/libcurl/) |
-| glfw | [https://github.com/glfw/glfw](https://github.com/glfw/glfw) |
 | IconFontCppHeaders | [https://github.com/juliettef/IconFontCppHeaders](https://github.com/juliettef/IconFontCppHeaders) |
 | imgui | [https://github.com/ocornut/imgui](https://github.com/ocornut/imgui) |
 | implot | [https://github.com/epezent/implot](https://github.com/epezent/implot) |
