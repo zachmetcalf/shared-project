@@ -13,12 +13,6 @@ nav_order: 2
 | shared | [https://github.com/zachmetcalf/shared](https://github.com/zachmetcalf/shared) |
 | shared-project | [https://github.com/zachmetcalf/shared-project](https://github.com/zachmetcalf/shared-project) |
 
-## languages
-
-| **Language** | **Reference** |
-| :----------------: | :----------------: |
-| [c++](https://cplusplus.com/doc/) | [https://github.com/fffaraz/awesome-cpp](https://github.com/fffaraz/awesome-cpp) |
-
 ## libraries
 
 | **Library** | **Reference** |
@@ -26,7 +20,6 @@ nav_order: 2
 | brew | [https://brew.sh/](https://brew.sh/) |
 | Catch2 | [https://github.com/catchorg/Catch2](https://github.com/catchorg/Catch2) |
 | cmake | [https://cmake.org/](https://cmake.org/) |
-| cpprestsdk | [https://github.com/microsoft/cpprestsdk](https://github.com/microsoft/cpprestsdk) |
 | curl | [https://curl.se/libcurl/](https://curl.se/libcurl/) |
 | git-cli | [https://github.com/cli/cli](https://github.com/cli/cli) |
 | git-scm | [https://git-scm.com/](https://git-scm.com/) |
