@@ -40,9 +40,9 @@ to receive updates from the template project, add the `shared-project` remote
 fetch, merge changes from the `shared-project` remote
 
 ```
-    git fetch --all
+    git fetch shared-project
     git checkout main
-    git merge shared-project/main --allow-unrelated-histories
+    git merge shared-project/main --allow-unrelated-histories -X theirs
 ```
 
 ## open
