@@ -28,23 +28,6 @@ install vscode extensions: `c++`, `cmake`, `lldb`
 
 run setup script in the `scripts` folder
 
-## update
-
-to receive updates from the template project, add the `shared-project` remote
-
-```
-    git remote add shared-project https://github.com/zachmetcalf/shared-project
-    git remote set-url --push shared-project no-push
-```
-
-fetch, merge changes from the `shared-project` remote
-
-```
-    git fetch --all
-    git checkout main
-    git merge shared-project/main --allow-unrelated-histories
-```
-
 ## open
 
 ### visual studio
