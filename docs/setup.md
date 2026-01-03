@@ -63,7 +63,6 @@ set the contents of `.vs\CMakeWorkspaceSettings.json` to the following:
 {
   "enableCMake": true,
   "sourceDirectory": [
-    "shared",
     "shared-project"
   ]
 }
@@ -74,4 +73,3 @@ then, right-click the shared folder and select "Open with Visual Studio"
 ### visual studio code
 
 open the workspace file: `vscode.code-workspace`
-

@@ -27,18 +27,6 @@ a library of shared utilities geared for quickly spinning up prototype C++ proje
 | implot | [https://github.com/epezent/implot](https://github.com/epezent/implot) |
 | inifile-cpp | [https://github.com/Rookfighter/inifile-cpp](https://github.com/Rookfighter/inifile-cpp) |
 | rapidjson | [https://github.com/Tencent/rapidjson/](https://github.com/Tencent/rapidjson/) |
-| slack api | [https://api.slack.com/methods](https://api.slack.com/methods) |
+| slack | [https://api.slack.com/methods](https://api.slack.com/methods) |
 | stb | [https://github.com/nothings/stb](https://github.com/nothings/stb) |
 | vcpkg | [https://github.com/microsoft/vcpkg](https://github.com/microsoft/vcpkg) |
-
-## comments
-
-{: .note}
-> comments in code adhere to the paradigm in the following examples:
-
-```c++
-    // <shared> change - *description* </shared>
-    // <shared> note - *description* </shared>
-    // <shared> todo - *description* </shared>
-    // <shared> won't fix - *description* </shared>
-```
