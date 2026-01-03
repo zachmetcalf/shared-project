@@ -7,7 +7,7 @@ nav_order: 1
 # setup
 
 {: .note}
-setup instructions may differ depending on platform, ide
+setup instructions may differ depending on platform or ide
 
 ## install
 
