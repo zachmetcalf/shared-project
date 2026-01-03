@@ -7,7 +7,7 @@ nav_order: 1
 # setup
 
 {: .note}
-setup instructions may differ depending on platform (windows or osx), ide (vs or vscode)
+setup instructions may differ depending on platform, ide
 
 ## install
 
@@ -18,14 +18,6 @@ install cmake, git
     winget install -e --id Kitware.CMake
     winget install --id Git.Git -e --source winget
     winget install --id GitHub.cli
-```
-
-### osx
-
-install brew, xcode tools
-```
-    xcode-select --install
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ### vscode
