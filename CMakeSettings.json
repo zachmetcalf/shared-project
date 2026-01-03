@@ -13,11 +13,11 @@
 			"variables": [
 				{
 					"name": "BUILD_SHARED_DEMOS",
-					"value": "OFF"
+					"value": "ON"
 				},
 				{
 					"name": "BUILD_SHARED_TESTS",
-					"value": "OFF"
+					"value": "ON"
 				},
 				{
 					"name": "WINDOWS_TOOLCHAIN_FILE",
@@ -38,11 +38,11 @@
 			"variables": [
 				{
 					"name": "BUILD_SHARED_DEMOS",
-					"value": "OFF"
+					"value": "ON"
 				},
 				{
 					"name": "BUILD_SHARED_TESTS",
-					"value": "OFF"
+					"value": "ON"
 				},
 				{
 					"name": "WINDOWS_TOOLCHAIN_FILE",
