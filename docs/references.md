@@ -22,6 +22,7 @@ nav_order: 2
 | curl | [https://curl.se/libcurl/](https://curl.se/libcurl/) |
 | IconFontCppHeaders | [https://github.com/juliettef/IconFontCppHeaders](https://github.com/juliettef/IconFontCppHeaders) |
 | imgui | [https://github.com/ocornut/imgui](https://github.com/ocornut/imgui) |
+| imgui-node-editor | [https://github.com/thedmd/imgui-node-editor](https://github.com/thedmd/imgui-node-editor) |
 | implot | [https://github.com/epezent/implot](https://github.com/epezent/implot) |
 | inifile-cpp | [https://github.com/Rookfighter/inifile-cpp](https://github.com/Rookfighter/inifile-cpp) |
 | rapidjson | [https://github.com/Tencent/rapidjson/](https://github.com/Tencent/rapidjson/) |

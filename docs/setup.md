@@ -55,6 +55,7 @@ set the contents of `.vs\CMakeWorkspaceSettings.json` to the following:
 {
   "enableCMake": true,
   "sourceDirectory": [
+    "shared",
     "shared-project"
   ]
 }
