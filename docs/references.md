@@ -26,7 +26,6 @@ nav_order: 2
 | implot | [https://github.com/epezent/implot](https://github.com/epezent/implot) |
 | inifile-cpp | [https://github.com/Rookfighter/inifile-cpp](https://github.com/Rookfighter/inifile-cpp) |
 | rapidjson | [https://github.com/Tencent/rapidjson/](https://github.com/Tencent/rapidjson/) |
-| sdl | [https://libsdl.org/](https://libsdl.org/) |
-| slack | [https://api.slack.com/methods](https://api.slack.com/methods) |
-| stb | [https://github.com/nothings/stb](https://github.com/nothings/stb) |
+| SDL | [https://libsdl.org/](https://libsdl.org/) |
+| Slack | [https://api.slack.com/methods](https://api.slack.com/methods) |
 | vcpkg | [https://github.com/microsoft/vcpkg](https://github.com/microsoft/vcpkg) |
