@@ -24,6 +24,7 @@ nav_order: 2
 | imgui | [https://github.com/ocornut/imgui](https://github.com/ocornut/imgui) |
 | imgui-node-editor | [https://github.com/thedmd/imgui-node-editor](https://github.com/thedmd/imgui-node-editor) |
 | implot | [https://github.com/epezent/implot](https://github.com/epezent/implot) |
+| imspinner | [https://github.com/dalerank/imspinner](https://github.com/dalerank/imspinner) |
 | inifile-cpp | [https://github.com/Rookfighter/inifile-cpp](https://github.com/Rookfighter/inifile-cpp) |
 | rapidjson | [https://github.com/Tencent/rapidjson/](https://github.com/Tencent/rapidjson/) |
 | SDL | [https://libsdl.org/](https://libsdl.org/) |
