@@ -23,8 +23,8 @@ start /wait /b cmd /c clean.bat
 popd
 
 if not %ERRORLEVEL% == 0 (
-    echo clean failed
-    exit /b 1
+	echo clean failed
+	exit /b 1
 )
 
 echo clean succeeded

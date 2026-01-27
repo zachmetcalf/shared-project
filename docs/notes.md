@@ -12,8 +12,8 @@ nav_order: 3
 > comments in code adhere to the following paradigm:
 
 ```c++
-    // <shared> change - *description* </shared>
-    // <shared> note - *description* </shared>
-    // <shared> todo - *description* </shared>
-    // <shared> won't fix - *description* </shared>
+	// <shared> change - *description* </shared>
+	// <shared> note - *description* </shared>
+	// <shared> todo - *description* </shared>
+	// <shared> won't fix - *description* </shared>
 ```

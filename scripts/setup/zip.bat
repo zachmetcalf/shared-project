@@ -16,7 +16,7 @@ set zipname=%projectname%.zip
 set zippath=%zipdir%\%zipname%
 
 if exist %zippath% (
-    del %zippath%
+	del %zippath%
 )
 
 powershell -NoProfile -Command "$paths=@();foreach($p in @('CMakeLists.txt','scripts','source')){if(Test-Path $p){$paths+=$p}};Compress-Archive -Force -Path $paths -DestinationPath '%zippath%'"
@@ -24,8 +24,8 @@ powershell -NoProfile -Command "$paths=@();foreach($p in @('CMakeLists.txt','scr
 popd
 
 if not %ERRORLEVEL% == 0 (
-    echo zip failed
-    exit /b 1
+	echo zip failed
+	exit /b 1
 )
 
 pushd %shareddir%\scripts\setup
@@ -35,8 +35,8 @@ start /wait /b cmd /c zip.bat
 popd
 
 if not %ERRORLEVEL% == 0 (
-    echo zip failed
-    exit /b 1
+	echo zip failed
+	exit /b 1
 )
 
 echo zip succeeded
