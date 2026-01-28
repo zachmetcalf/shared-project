@@ -11,7 +11,7 @@ pushd %projectdir%
 
 for %%i in ("%projectdir%") do set projectname=%%~ni
 
-set zipdir=%cwd%
+set zipdir=%projectdir%\..
 set zipname=%projectname%.zip
 set zippath=%zipdir%\%zipname%
 
