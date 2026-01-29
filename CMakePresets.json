@@ -1,0 +1,41 @@
+{
+	"version": 3,
+	"configurePresets": [
+		{
+			"name": "shared-project-debug",
+			"displayName": "Shared Project (Debug)",
+			"generator": "Ninja",
+			"binaryDir": "${sourceDir}/build/debug",
+			"toolchainFile": "${sourceDir}/../3rdparty/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Debug",
+				"BUILD_SHARED_DEMOS": "OFF",
+				"BUILD_SHARED_TESTS": "OFF"
+			}
+		},
+		{
+			"name": "shared-project-release",
+			"displayName": "Shared Project (Release)",
+			"generator": "Ninja",
+			"binaryDir": "${sourceDir}/build/release",
+			"toolchainFile": "${sourceDir}/../3rdparty/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Release",
+				"BUILD_SHARED_DEMOS": "OFF",
+				"BUILD_SHARED_TESTS": "OFF"
+			}
+		}
+	],
+	"buildPresets": [
+		{
+			"name": "shared-project-debug",
+			"configurePreset": "shared-project-debug",
+			"verbose": true
+		},
+		{
+			"name": "shared-project-release",
+			"configurePreset": "shared-project-release",
+			"verbose": true
+		}
+	]
+}
