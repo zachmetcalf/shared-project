@@ -4,7 +4,6 @@
         {
             "label": "clean",
             "type": "shell",
-            "command": "./clean.command",
             "windows": {
                 "command": ".\\clean.bat"
             },
@@ -16,21 +15,8 @@
         {
             "label": "setup",
             "type": "shell",
-            "command": "./setup.command",
             "windows": {
                 "command": ".\\setup.bat"
-            },
-            "options": {
-                "cwd": "${workspaceFolder}/scripts/setup"
-            },
-            "problemMatcher": []
-        },
-        {
-            "label": "terminal",
-            "type": "shell",
-            "command": "./terminal.command",
-            "windows": {
-                "command": ".\\terminal.bat"
             },
             "options": {
                 "cwd": "${workspaceFolder}/scripts/setup"
