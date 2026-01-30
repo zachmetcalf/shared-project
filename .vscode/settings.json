@@ -6,6 +6,7 @@
 	"cmake.configureOnOpen": true,
 	"cmake.useCMakePresets": "always",
 	"editor.detectIndentation": false,
+	"editor.guides.indentation": false,
 	"editor.insertSpaces": false,
 	"files.exclude": {
 		"bin/": true,

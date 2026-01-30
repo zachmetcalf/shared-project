@@ -5,6 +5,7 @@ Checks: >
   -*,
   clang-analyzer-*,
   bugprone-*,
+  -bugprone-macro-parentheses,
   performance-*
 
 WarningsAsErrors: ''
