@@ -19,7 +19,8 @@ if exist %zippath% (
 	del %zippath%
 )
 
-powershell -NoProfile -Command "$paths=@();foreach($p in @('CMakeLists.txt','scripts','source')){if(Test-Path $p){$paths+=$p}};Compress-Archive -Force -Path $paths -DestinationPath '%zippath%'"
+powershell -NoProfile -Command "Compress-Archive -Force -Path (Get-ChildItem -LiteralPath '.' -File | Select-Object -ExpandProperty FullName) -DestinationPath '%zippath%'"
+powershell -NoProfile -Command "Compress-Archive -Update -Path '.vscode','scripts' -DestinationPath '%zippath%'"
 
 popd
 
