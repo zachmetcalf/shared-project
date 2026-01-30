@@ -5,8 +5,7 @@ Checks: >
   -*,
   clang-analyzer-*,
   bugprone-*,
-  performance-*,
-  modernize-*
+  performance-*
 
 WarningsAsErrors: ''
 HeaderFilterRegex: '.*'
