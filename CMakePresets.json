@@ -1,27 +1,27 @@
 {
-	"version": 3,
-	"configurePresets": [
-		{
-			"name": "shared-project",
-			"generator": "Visual Studio 18 2026",
-			"binaryDir": "${sourceDir}/build",
-			"toolchainFile": "${sourceDir}/../3rdparty/vcpkg/scripts/buildsystems/vcpkg.cmake",
-			"cacheVariables": {
-				"BUILD_SHARED_DEMOS": "OFF",
-				"BUILD_SHARED_TESTS": "OFF"
-			}
-		}
-	],
-	"buildPresets": [
-		{
-			"name": "Debug",
-			"configurePreset": "shared-project",
-			"configuration": "Debug"
-		},
-		{
-			"name": "Release",
-			"configurePreset": "shared-project",
-			"configuration": "Release"
-		}
-	]
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "shared-project",
+            "generator": "Visual Studio 18 2026",
+            "binaryDir": "${sourceDir}/build",
+            "toolchainFile": "${sourceDir}/../3rdparty/vcpkg/scripts/buildsystems/vcpkg.cmake",
+            "cacheVariables": {
+                "BUILD_SHARED_DEMOS": "OFF",
+                "BUILD_SHARED_TESTS": "OFF"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Debug",
+            "configurePreset": "shared-project",
+            "configuration": "Debug"
+        },
+        {
+            "name": "Release",
+            "configurePreset": "shared-project",
+            "configuration": "Release"
+        }
+    ]
 }
