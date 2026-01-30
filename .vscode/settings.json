@@ -8,6 +8,7 @@
 	"editor.detectIndentation": false,
 	"editor.guides.indentation": false,
 	"editor.insertSpaces": false,
+	"editor.minimap.enabled": false,
 	"files.exclude": {
 		"bin/": true,
 		"build/": true,
