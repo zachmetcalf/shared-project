@@ -1,10 +1,17 @@
 {
-	"cmake.configureOnOpen": true,
-	"cmake.useCMakePresets": "always",
-	"search.exclude": {
-		"bin/": true,
-		"build/": true,
-		"docs/": true,
-		"install/": true
-	}
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "cmake.configureOnOpen": true,
+    "cmake.useCMakePresets": "always",
+    "files.exclude": {
+        "bin/": true,
+        "build/": true,
+        "install/": true
+    },
+    "search.exclude": {
+        "bin/": true,
+        "build/": true,
+        "install/": true
+    }
 }
