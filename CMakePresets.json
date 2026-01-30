@@ -3,10 +3,13 @@
     "configurePresets": [
         {
             "name": "shared-project",
-            "generator": "Visual Studio 18 2026",
+            "generator": "Ninja Multi-Config",
             "binaryDir": "${sourceDir}/build",
             "toolchainFile": "${sourceDir}/../3rdparty/vcpkg/scripts/buildsystems/vcpkg.cmake",
             "cacheVariables": {
+				"CMAKE_C_COMPILER": "cl",
+				"CMAKE_CXX_COMPILER": "cl",
+                "CMAKE_CONFIGURATION_TYPES": "Debug;Release",
                 "BUILD_SHARED_DEMOS": "OFF",
                 "BUILD_SHARED_TESTS": "OFF"
             }
