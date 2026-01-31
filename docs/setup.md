@@ -13,16 +13,23 @@ setup instructions may differ depending on platform or ide
 
 ### windows
 
-install cmake, git
+install cmake, git, ninja
 ```
 	winget install -e --id Kitware.CMake
-	winget install --id Git.Git -e --source winget
-	winget install --id GitHub.cli
+	winget install -e --id Git.Git
+	winget install -e --id GitHub.cli
+	winget install -e --id Ninja-build.Ninja
 ```
 
 ### vscode
 
-install vscode extensions: `c++`, `cmake`, `lldb`
+install vscode extensions:
+
+- **C/C++ (Microsoft)**
+- **CMake Tools (Microsoft)**
+- **CodeLLDB**
+- **Better C++ Syntax**
+- **Visual Studio Keymap**
 
 ## setup
 
