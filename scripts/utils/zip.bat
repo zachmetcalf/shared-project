@@ -21,21 +21,23 @@ if exist %zippath% (
 
 powershell -NoProfile -Command "Compress-Archive -Force -Path (Get-ChildItem -LiteralPath '.' -File | Select-Object -ExpandProperty FullName) -DestinationPath '%zippath%'"
 powershell -NoProfile -Command "Compress-Archive -Update -Path '.vscode','scripts' -DestinationPath '%zippath%'"
+set error=%ERRORLEVEL%
 
 popd
 
-if not %ERRORLEVEL% == 0 (
+if not %error% == 0 (
 	echo zip failed
 	exit /b 1
 )
 
 pushd %shareddir%\scripts\setup
 
-start /wait /b cmd /c zip.bat
+call zip.bat
+set error=%ERRORLEVEL%
 
 popd
 
-if not %ERRORLEVEL% == 0 (
+if not %error% == 0 (
 	echo zip failed
 	exit /b 1
 )

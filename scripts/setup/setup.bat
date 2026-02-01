@@ -15,11 +15,12 @@ popd
 
 pushd %shareddir%\scripts\setup
 
-start /wait /b cmd /c setup.bat
+call setup.bat
+set error=%ERRORLEVEL%
 
 popd
 
-if not %ERRORLEVEL% == 0 (
+if not %error% == 0 (
 	echo setup failed
 	exit /b 1
 )

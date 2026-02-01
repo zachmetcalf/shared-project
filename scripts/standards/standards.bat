@@ -30,9 +30,11 @@ if not exist "%projectdir%\.vscode" (
 
 copy /Y "%tempdir%\standards\.vscode\settings.json" "%projectdir%\.vscode\settings.json" >nul
 
+set error=%ERRORLEVEL%
+
 rmdir %tempdir% /s /q
 
-if not %ERRORLEVEL% == 0 (
+if not %error% == 0 (
 	echo standards failed
 	exit /b 1
 )

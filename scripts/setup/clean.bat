@@ -18,11 +18,12 @@ popd
 
 pushd %shareddir%\scripts\setup
 
-start /wait /b cmd /c clean.bat
+call clean.bat
+set error=%ERRORLEVEL%
 
 popd
 
-if not %ERRORLEVEL% == 0 (
+if not %error% == 0 (
 	echo clean failed
 	exit /b 1
 )
