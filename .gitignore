@@ -4,6 +4,7 @@
 bin/
 build/
 install/
+vcpkg_installed/
 
 # files
 Gemfile.lock
