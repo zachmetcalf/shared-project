@@ -33,7 +33,7 @@ set repo=%~1
 set branch=%~2
 set url=%~3
 if not exist %repo% (
-	git clone --branch %branch% %url%
+	git clone --branch %branch% %url% %repo%
 ) else (
 	pushd %repo%
 	git pull
