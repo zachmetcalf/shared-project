@@ -30,7 +30,7 @@ if not %error% == 0 (
 	exit /b 1
 )
 
-pushd %shareddir%\scripts\setup
+pushd %shareddir%\scripts\utils
 
 call zip.bat
 set error=%ERRORLEVEL%
