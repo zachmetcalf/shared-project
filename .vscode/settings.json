@@ -2,7 +2,8 @@
     "C_Cpp.codeAnalysis.clangTidy.enabled": true,
     "C_Cpp.codeAnalysis.runAutomatically": true,
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
-    "cmake.configureOnOpen": true,
+	"cmake.configureOnEdit": false,
+	"cmake.configureOnOpen": false,
     "cmake.environment": {
         "VSCMD_START_DIR": "${workspaceFolder}"
     },
@@ -15,14 +16,12 @@
     "files.exclude": {
         "bin/": true,
         "build/": true,
-        "install/": true,
-		"vcpkg_installed/": true
+        "install/": true
     },
 	"files.insertFinalNewline": true,
     "search.exclude": {
         "bin/": true,
         "build/": true,
-        "install/": true,
-		"vcpkg_installed/": true
+        "install/": true
     }
 }

@@ -9,5 +9,5 @@ Checks: >
   performance-*
 
 WarningsAsErrors: ''
-HeaderFilterRegex: '.*'
+HeaderFilterRegex: '^(?!.*3rdparty).*'
 FormatStyle: none
