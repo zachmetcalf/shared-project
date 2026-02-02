@@ -7,12 +7,6 @@ set cwd=%~dp0
 set projectdir=%cwd%..\..
 set shareddir=%projectdir%\..\shared
 
-pushd %shareddir%\scripts\utils
-
-call zip.bat
-
-popd
-
 pushd %projectdir%
 
 for %%i in ("%projectdir%") do set projectname=%%~ni
@@ -27,6 +21,12 @@ if exist %zippath% (
 
 powershell -NoProfile -Command "Compress-Archive -Force -Path (Get-ChildItem -LiteralPath '.' -File | Select-Object -ExpandProperty FullName) -DestinationPath '%zippath%'"
 powershell -NoProfile -Command "Compress-Archive -Update -Path '.vscode','scripts','source' -DestinationPath '%zippath%'"
+
+popd
+
+pushd %shareddir%\scripts\utils
+
+call zip.bat
 
 popd
 
