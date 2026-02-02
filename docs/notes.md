@@ -9,7 +9,7 @@ nav_order: 3
 ## comments
 
 {: .note}
-> comments in code adhere to the following paradigm:
+> comments in code use the following convention:
 
 ```c++
 	// <shared> change - *description* </shared>

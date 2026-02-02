@@ -18,7 +18,7 @@ nav_order: 2
 | **Library** | **Reference** |
 | :----------------: | :----------------: |
 | Catch2 | [https://github.com/catchorg/Catch2](https://github.com/catchorg/Catch2) |
-| cmake | [https://cmake.org/](https://cmake.org/) |
+| CMake | [https://cmake.org/](https://cmake.org/) |
 | curl | [https://curl.se/libcurl/](https://curl.se/libcurl/) |
 | IconFontCppHeaders | [https://github.com/juliettef/IconFontCppHeaders](https://github.com/juliettef/IconFontCppHeaders) |
 | imgui | [https://github.com/ocornut/imgui](https://github.com/ocornut/imgui) |
@@ -27,6 +27,6 @@ nav_order: 2
 | imspinner | [https://github.com/dalerank/imspinner](https://github.com/dalerank/imspinner) |
 | inifile-cpp | [https://github.com/Rookfighter/inifile-cpp](https://github.com/Rookfighter/inifile-cpp) |
 | rapidjson | [https://github.com/Tencent/rapidjson/](https://github.com/Tencent/rapidjson/) |
-| SDL | [https://libsdl.org/](https://libsdl.org/) |
+| SDL3 | [https://libsdl.org/](https://libsdl.org/) |
 | Slack | [https://api.slack.com/methods](https://api.slack.com/methods) |
 | vcpkg | [https://github.com/microsoft/vcpkg](https://github.com/microsoft/vcpkg) |
