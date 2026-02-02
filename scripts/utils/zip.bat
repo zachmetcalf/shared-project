@@ -20,7 +20,7 @@ if exist %zippath% (
 )
 
 powershell -NoProfile -Command "Compress-Archive -Force -Path (Get-ChildItem -LiteralPath '.' -File | Select-Object -ExpandProperty FullName) -DestinationPath '%zippath%'"
-powershell -NoProfile -Command "Compress-Archive -Update -Path '.vscode','scripts','source' -DestinationPath '%zippath%'"
+powershell -NoProfile -Command "Compress-Archive -Update -Path '.vscode','scripts' -DestinationPath '%zippath%'"
 
 popd
 
