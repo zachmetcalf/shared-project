@@ -7,26 +7,20 @@ set cwd=%~dp0
 set projectdir=%cwd%..\..
 set shareddir=%projectdir%\..\shared
 
-pushd %projectdir%
-
-rmdir .vs /s /q
-rmdir bin /s /q
-rmdir build /s /q
-rmdir install /s /q
-
-popd
-
 pushd %shareddir%\scripts\setup
 
 call clean.bat
-set error=%ERRORLEVEL%
 
 popd
 
-if not %error% == 0 (
-	echo clean failed
-	exit /b 1
-)
+pushd %projectdir%
 
-echo clean succeeded
+if exist .vs rmdir .vs /s /q
+if exist bin rmdir bin /s /q
+if exist build rmdir build /s /q
+if exist install rmdir install /s /q
+
+popd
+
+echo clean completed
 exit /b 0

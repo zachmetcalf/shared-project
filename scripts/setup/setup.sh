@@ -1,7 +1,6 @@
 # Copyright (c) 2026 Zach Metcalf. All Rights Reserved.
 
 #!/usr/bin/env bash
-set +e
 echo -n -e "\033]0;setup\007"
 
 cwd=$(cd "$(dirname "$0")"; pwd)
@@ -12,17 +11,17 @@ pushd $projectdir/..
 
 function SetupGitRepo()
 {
-    repo=$1
-    branch=$2
-    url=$3
+	repo=$1
+	branch=$2
+	url=$3
 
-    if [ ! -d $repo ]; then
-        git clone --branch $branch $url $repo
-    else
-        pushd $repo
-        git pull
-        popd
-    fi
+	if [ ! -d $repo ]; then
+		git clone --branch $branch $url $repo
+	else
+		pushd $repo
+		git pull
+		popd
+	fi
 }
 
 SetupGitRepo shared main https://github.com/zachmetcalf/shared
@@ -32,14 +31,8 @@ popd
 pushd $shareddir/scripts/setup
 
 ./setup.sh
-error=$?
 
 popd
 
-if [ $error != 0 ]; then
-  echo setup failed
-  exit 1
-fi
-
-echo setup succeeded
+echo setup completed
 exit 0

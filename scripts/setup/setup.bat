@@ -16,16 +16,10 @@ popd
 pushd %shareddir%\scripts\setup
 
 call setup.bat
-set error=%ERRORLEVEL%
 
 popd
 
-if not %error% == 0 (
-	echo setup failed
-	exit /b 1
-)
-
-echo setup succeeded
+echo setup completed
 exit /b 0
 
 :SetupGitRepo
@@ -33,6 +27,7 @@ setlocal
 set repo=%~1
 set branch=%~2
 set url=%~3
+
 if not exist %repo% (
 	git clone --branch %branch% %url% %repo%
 ) else (
@@ -40,5 +35,6 @@ if not exist %repo% (
 	git pull
 	popd
 )
+
 endlocal
 exit /b 0
