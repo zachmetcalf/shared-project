@@ -7,13 +7,13 @@ set cwd=%~dp0
 set projectdir=%cwd%..\..
 set shareddir=%projectdir%\..\shared
 
-pushd %projectdir%\..
+pushd "%projectdir%\.."
 
 call :SetupGitRepo shared main https://github.com/zachmetcalf/shared
 
 popd
 
-pushd %shareddir%\scripts\setup
+pushd "%shareddir%\scripts\setup"
 
 call setup.bat
 
@@ -28,10 +28,10 @@ set repo=%~1
 set branch=%~2
 set url=%~3
 
-if not exist %repo% (
-	git clone --branch %branch% %url% %repo%
+if not exist "%repo%" (
+	git clone --branch %branch% %url% "%repo%"
 ) else (
-	pushd %repo%
+	pushd "%repo%"
 	git pull
 	popd
 )
