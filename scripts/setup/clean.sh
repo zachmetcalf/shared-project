@@ -4,16 +4,16 @@
 echo -n -e "\033]0;clean\007"
 
 cwd=$(cd "$(dirname "$0")"; pwd)
-projectdir=$cwd/../..
-shareddir=$projectdir/../shared
+projectdir="$cwd/../.."
+shareddir="$projectdir/../shared"
 
-pushd $shareddir/scripts/setup
+pushd "$shareddir/scripts/setup"
 
 ./clean.sh
 
 popd
 
-pushd $projectdir
+pushd "$projectdir"
 
 rm -rf .vs
 rm -rf bin

@@ -4,21 +4,21 @@
 echo -n -e "\033]0;setup\007"
 
 cwd=$(cd "$(dirname "$0")"; pwd)
-projectdir=$cwd/../..
-shareddir=$projectdir/../shared
+projectdir="$cwd/../.."
+shareddir="$projectdir/../shared"
 
-pushd $projectdir/..
+pushd "$projectdir/.."
 
 function SetupGitRepo()
 {
-	repo=$1
-	branch=$2
-	url=$3
+	repo="$1"
+	branch="$2"
+	url="$3"
 
-	if [ ! -d $repo ]; then
-		git clone --branch $branch $url $repo
+	if [ ! -d "$repo" ]; then
+		git clone --branch "$branch" "$url" "$repo"
 	else
-		pushd $repo
+		pushd "$repo"
 		git pull
 		popd
 	fi
@@ -28,7 +28,7 @@ SetupGitRepo shared main https://github.com/zachmetcalf/shared
 
 popd
 
-pushd $shareddir/scripts/setup
+pushd "$shareddir/scripts/setup"
 
 ./setup.sh
 

@@ -7,31 +7,25 @@ set cwd=%~dp0
 set projectdir=%cwd%..\..
 set tempdir=%projectdir%\.standards
 
-if exist %tempdir% (
-	rmdir /s /q %tempdir%
+if exist "%tempdir%" (
+	rmdir /s /q "%tempdir%"
 )
 
-mkdir %tempdir%
+mkdir "%tempdir%"
 
-pushd %tempdir%
+pushd "%tempdir%"
 
 git clone --branch main https://github.com/zachmetcalf/zachmetcalf .
 
 popd
 
-if not exist %projectdir%\.vscode (
-	mkdir %projectdir%\.vscode
-)
+pushd "%tempdir%\scripts\standards"
 
-copy /y %tempdir%\.vscode\settings.json %projectdir%\.vscode\settings.json >nul
-copy /y %tempdir%\.vscode\tasks.json %projectdir%\.vscode\tasks.json >nul
-copy /y %tempdir%\.clang-tidy %projectdir%\.clang-tidy >nul
-copy /y %tempdir%\.editorconfig %projectdir%\.editorconfig >nul
-copy /y %tempdir%\.gitattributes %projectdir%\.gitattributes >nul
-copy /y %tempdir%\.gitignore %projectdir%\.gitignore >nul
-copy /y %tempdir%\license.txt %projectdir%\license.txt >nul
+call .\standards.bat "%projectdir%"
 
-rmdir /s /q %tempdir%
+popd
+
+rmdir /s /q "%tempdir%"
 
 echo standards completed
 exit /b 0
