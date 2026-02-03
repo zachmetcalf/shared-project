@@ -10,9 +10,6 @@
 			"toolchainFile": "${sourceDir}/../3rdparty/vcpkg/scripts/buildsystems/vcpkg.cmake",
 			"cacheVariables": {
 				"CMAKE_CONFIGURATION_TYPES": "Debug;Release",
-				"CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/bin",
-				"CMAKE_LIBRARY_OUTPUT_DIRECTORY": "${sourceDir}/bin",
-				"CMAKE_ARCHIVE_OUTPUT_DIRECTORY": "${sourceDir}/bin",
 				"BUILD_SHARED_TESTS": "ON",
 				"BUILD_SHARED_DEMOS": "OFF"
 			}
