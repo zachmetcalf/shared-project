@@ -1,61 +1,65 @@
 {
-    "version": 3,
-    "configurePresets": [
-        {
-            "name": "shared-project",
-            "hidden": true,
-            "generator": "Ninja Multi-Config",
-            "binaryDir": "${sourceDir}/build",
-            "toolchainFile": "${sourceDir}/../3rdparty/vcpkg/scripts/buildsystems/vcpkg.cmake",
-            "cacheVariables": {
-                "CMAKE_CONFIGURATION_TYPES": "Debug;Release",
-                "BUILD_SHARED_TESTS": "ON",
-                "BUILD_SHARED_DEMOS": "OFF"
-            }
-        },
-        {
-            "name": "shared-project-windows",
-            "inherits": "shared-project",
-            "cacheVariables": {
-                "CMAKE_C_COMPILER": "cl",
-                "CMAKE_CXX_COMPILER": "cl"
-            },
-            "condition": {
-                "type": "equals",
-                "lhs": "${hostSystemName}",
-                "rhs": "Windows"
-            }
-        },
-        {
-            "name": "shared-project-linux",
-            "inherits": "shared-project",
-            "condition": {
-                "type": "equals",
-                "lhs": "${hostSystemName}",
-                "rhs": "Linux"
-            }
-        }
-    ],
-    "buildPresets": [
-        {
-            "name": "debug-windows",
-            "configurePreset": "shared-project-windows",
-            "configuration": "Debug"
-        },
-        {
-            "name": "release-windows",
-            "configurePreset": "shared-project-windows",
-            "configuration": "Release"
-        },
-        {
-            "name": "debug-linux",
-            "configurePreset": "shared-project-linux",
-            "configuration": "Debug"
-        },
-        {
-            "name": "release-linux",
-            "configurePreset": "shared-project-linux",
-            "configuration": "Release"
-        }
-    ]
+	"version": 3,
+	"configurePresets": [
+		{
+			"name": "shared-project",
+			"hidden": true,
+			"generator": "Ninja Multi-Config",
+			"binaryDir": "${sourceDir}/build",
+			"installDir": "${sourceDir}/install",
+			"toolchainFile": "${sourceDir}/../3rdparty/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"cacheVariables": {
+				"CMAKE_CONFIGURATION_TYPES": "Debug;Release",
+				"CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/bin",
+				"CMAKE_LIBRARY_OUTPUT_DIRECTORY": "${sourceDir}/bin",
+				"CMAKE_ARCHIVE_OUTPUT_DIRECTORY": "${sourceDir}/bin",
+				"BUILD_SHARED_TESTS": "ON",
+				"BUILD_SHARED_DEMOS": "OFF"
+			}
+		},
+		{
+			"name": "shared-project-windows",
+			"inherits": "shared-project",
+			"cacheVariables": {
+				"CMAKE_C_COMPILER": "cl",
+				"CMAKE_CXX_COMPILER": "cl"
+			},
+			"condition": {
+				"type": "equals",
+				"lhs": "${hostSystemName}",
+				"rhs": "Windows"
+			}
+		},
+		{
+			"name": "shared-project-linux",
+			"inherits": "shared-project",
+			"condition": {
+				"type": "equals",
+				"lhs": "${hostSystemName}",
+				"rhs": "Linux"
+			}
+		}
+	],
+	"buildPresets": [
+		{
+			"name": "debug-windows",
+			"configurePreset": "shared-project-windows",
+			"configuration": "Debug"
+		},
+		{
+			"name": "release-windows",
+			"configurePreset": "shared-project-windows",
+			"configuration": "Release"
+		},
+		{
+			"name": "debug-linux",
+			"configurePreset": "shared-project-linux",
+			"configuration": "Debug"
+		},
+		{
+			"name": "release-linux",
+			"configurePreset": "shared-project-linux",
+			"configuration": "Release"
+		}
+	]
 }
