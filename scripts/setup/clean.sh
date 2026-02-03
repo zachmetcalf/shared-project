@@ -7,18 +7,18 @@ cwd=$(cd "$(dirname "$0")"; pwd)
 projectdir="$cwd/../.."
 shareddir="$projectdir/../shared"
 
-pushd "$shareddir/scripts/setup"
-
-./clean.sh
-
-popd
-
 pushd "$projectdir"
 
 rm -rf .vs
 rm -rf bin
 rm -rf build
 rm -rf install
+
+popd
+
+pushd "$shareddir/scripts/setup"
+
+./clean.sh
 
 popd
 
