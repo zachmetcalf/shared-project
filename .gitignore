@@ -4,10 +4,10 @@
 bin/
 build/
 install/
-vcpkg_installed/
 
 # files
 Gemfile.lock
 
 # visual studio
 .vs/
+*.aps
