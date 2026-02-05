@@ -18,6 +18,7 @@ install cmake, git, ninja
 	winget install -e --id Kitware.CMake
 	winget install -e --id Git.Git
 	winget install -e --id GitHub.cli
+	winget install -e --id LLVM.LLVM
 	winget install -e --id Ninja-build.Ninja
 ```
 
