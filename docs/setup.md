@@ -25,7 +25,7 @@ install cmake, git, ninja
 
 install vscode extensions:
 
-`C/C++`, `CMake Tools`, `CodeLLDB`, `Codex`, `Visual Studio Keymap`
+`C/C++`, `clangd`, `CMake Tools`, `CodeLLDB`, `Codex`, `Visual Studio Keymap`
 
 ## setup
 
