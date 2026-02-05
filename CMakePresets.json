@@ -10,6 +10,7 @@
 			"toolchainFile": "${sourceDir}/../3rdparty/vcpkg/scripts/buildsystems/vcpkg.cmake",
 			"cacheVariables": {
 				"CMAKE_CONFIGURATION_TYPES": "Debug;Release",
+				"CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
 				"BUILD_SHARED_TESTS": "ON",
 				"BUILD_SHARED_DEMOS": "OFF"
 			}
