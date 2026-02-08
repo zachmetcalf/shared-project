@@ -1,22 +1,22 @@
 {
-    "folders": [
-        {
-            "name": "3rdparty",
-            "path": "../3rdparty"
-        },
-        {
-            "name": "shared",
-            "path": "../shared"
-        },
-        {
-            "name": "shared-project",
-            "path": "../shared-project"
-        },
-        {
-            "path": "."
-        }
-    ],
-    "settings": {
-        "cmake.defaultActiveFolder": "."
-    }
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "3rdparty",
+			"path": "../3rdparty"
+		},
+		{
+			"name": "shared",
+			"path": "../shared"
+		},
+		{
+			"name": "shared-project",
+			"path": "../shared-project"
+		}
+	],
+	"settings": {
+		"cmake.defaultActiveFolder": "."
+	}
 }
