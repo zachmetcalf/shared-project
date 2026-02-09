@@ -19,6 +19,7 @@ nav_order: 2
 | :----------------: | :----------------: |
 | Catch2 | [https://github.com/catchorg/Catch2](https://github.com/catchorg/Catch2) |
 | CMake | [https://cmake.org/](https://cmake.org/) |
+| cpprestsdk | [https://github.com/microsoft/cpprestsdk](https://github.com/microsoft/cpprestsdk) |
 | curl | [https://curl.se/libcurl/](https://curl.se/libcurl/) |
 | IconFontCppHeaders | [https://github.com/juliettef/IconFontCppHeaders](https://github.com/juliettef/IconFontCppHeaders) |
 | imgui | [https://github.com/ocornut/imgui](https://github.com/ocornut/imgui) |
