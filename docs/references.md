@@ -21,6 +21,7 @@ nav_order: 2
 | CMake | [https://cmake.org/](https://cmake.org/) |
 | cpprestsdk | [https://github.com/microsoft/cpprestsdk](https://github.com/microsoft/cpprestsdk) |
 | curl | [https://curl.se/libcurl/](https://curl.se/libcurl/) |
+| cxxopts | [https://github.com/jarro2783/cxxopts](https://github.com/jarro2783/cxxopts) |
 | IconFontCppHeaders | [https://github.com/juliettef/IconFontCppHeaders](https://github.com/juliettef/IconFontCppHeaders) |
 | imgui | [https://github.com/ocornut/imgui](https://github.com/ocornut/imgui) |
 | imgui-node-editor | [https://github.com/thedmd/imgui-node-editor](https://github.com/thedmd/imgui-node-editor) |
