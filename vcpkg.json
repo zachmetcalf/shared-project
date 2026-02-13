@@ -1,13 +1,15 @@
 {
-  "name": "shared-project",
-  "version-string": "0.1",
-  "dependencies": [
-	"catch2",
-	"curl",
-	"sdl3",
-	{
-	  "name": "sdl3-image",
-	  "features": [ "png" ]
-	}
-  ]
+    "name": "shared-project",
+    "version-string": "0.1",
+    "dependencies": [
+        "catch2",
+        "curl",
+        "sdl3",
+        {
+            "name": "sdl3-image",
+            "features": [
+                "png"
+            ]
+        }
+    ]
 }
