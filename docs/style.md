@@ -19,7 +19,7 @@ nav_order: 3
 
 - `PascalCase` for types, functions
 - `mMemberName` for class members
-- `sMemberName` for static members
+- `sMemberName` for static variables
 - `kConstantName` for constants
 - Simple temporary locals: `str`, `val`, `it`, `idx`, `sv`, etc.
 
