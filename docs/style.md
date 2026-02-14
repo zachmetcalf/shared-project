@@ -8,9 +8,12 @@ nav_order: 3
 
 ## code
 
-- Prefer simple APIs
+- Prefer simple, encapsulated APIs
 - Prefer fail-fast for developer errors (e.g. `ASSERT_COMPILE`, `ASSERT_RUNTIME`)
+- Prefer reuse, testing of repeated logic in `shared`
 - Prefer uniform initialization for `shared` types (i.e. `T value{}`)
+- Prefer meaningful logging
+- Match existing structure (e.g. branches, comments, includes, namespaces, spacing, etc.)
 
 ## naming
 
@@ -19,13 +22,6 @@ nav_order: 3
 - `sMemberName` for static members
 - `kConstantName` for constants
 - Simple temporary locals: `str`, `val`, `it`, `idx`, `sv`, etc.
-
-## structure
-
-- Match existing structure (e.g. branches, comments, includes, spacing, etc.)
-- Prefer braces on branch blocks
-- Prefer meaningful logging
-- Prefer reuse, promotion, testing of repeated logic
 
 ## comments
 
