@@ -17,7 +17,7 @@ nav_order: 3
 
 ## naming
 
-- `PascalCase` for types, functions
+- `Name` for types, functions
 - `mMemberName` for class members
 - `sVariableName` for static variables
 - `kConstantName` for constants
