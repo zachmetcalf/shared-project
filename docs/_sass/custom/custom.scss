@@ -1,0 +1,52 @@
+.main-content img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.main-content pre {
+  tab-size: 4;
+  line-height: 1.0;
+}
+
+.main-content th {
+  min-width: 20px;
+}
+
+.main-content td {
+  min-width: 20px;
+}
+
+.main-content p {
+  margin-top: 0em;
+}
+
+.label {
+  margin-bottom: 0.5em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  font-size: 11px !important;
+}
+
+a[href="#spoiler"] {
+  text-decoration: none !important;
+  cursor: default;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #FFF8DC;
+  border-left: 4px solid #ffeb8e;
+  display: inline-block;
+}
+
+a[href="#spoiler"]::after {
+  content: attr(title);
+  color: #FFF8DC;
+  padding: 0 0.5em;
+}
+
+a[href="#spoiler"]:hover::after,
+a[href="#spoiler"]:active::after {
+  cursor: auto;
+  color: black;
+  transition: color .5s ease-in-out;
+}
