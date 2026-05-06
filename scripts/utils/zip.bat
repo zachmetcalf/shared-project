@@ -5,7 +5,6 @@ title zip
 
 set cwd=%~dp0
 set projectdir=%cwd%..\..
-set shareddir=%projectdir%\..\shared
 
 pushd "%projectdir%"
 
@@ -20,13 +19,7 @@ if exist "%zippath%" (
 )
 
 powershell -NoProfile -Command "Compress-Archive -Force -Path (Get-ChildItem -LiteralPath '.' -File | Select-Object -ExpandProperty FullName) -DestinationPath '%zippath%'"
-powershell -NoProfile -Command "Compress-Archive -Update -Path '.vscode','docs','scripts' -DestinationPath '%zippath%'"
-
-popd
-
-pushd "%shareddir%\scripts\utils"
-
-call zip.bat
+powershell -NoProfile -Command "$paths = @('.codex','.github','.vscode','config','docs','infra','scripts','services','source') | Where-Object { Test-Path $_ }; if ($paths.Length -gt 0) { Compress-Archive -Update -Path $paths -DestinationPath '%zippath%' }"
 
 popd
 
