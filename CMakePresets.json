@@ -12,7 +12,7 @@
                 "CMAKE_CONFIGURATION_TYPES": "Debug;Release",
                 "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
                 "VCPKG_MANIFEST_DIR": "${sourceDir}/../shared",
-                "BUILD_SHARED_TESTS": "ON",
+                "BUILD_SHARED_TESTS": "OFF",
                 "BUILD_SHARED_DEMOS": "OFF"
             }
         },
