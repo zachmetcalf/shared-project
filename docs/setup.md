@@ -49,25 +49,6 @@ install vscode extensions:
 
 run setup script
 
-## update
-
-run update script
-
-to receive updates from the template project, add the `shared-project` remote
-
-```
-	git remote add shared-project https://github.com/zachmetcalf/shared-project
-	git remote set-url --push shared-project no-push
-```
-
-fetch, merge changes from the `shared-project` remote
-
-```
-	git fetch shared-project
-	git checkout main
-	git merge shared-project/main --allow-unrelated-histories -X theirs
-```
-
 ## open
 
 ### visual studio
@@ -79,7 +60,9 @@ set the contents of `.vs\CMakeWorkspaceSettings.json` to the following:
   "enableCMake": true,
   "sourceDirectory": [
 	"shared",
-	"shared-project"
+	"shared-games",
+	"shared-project",
+	"shared-services"
   ]
 }
 ```
