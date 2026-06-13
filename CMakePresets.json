@@ -5,15 +5,18 @@
             "name": "shared-project",
             "hidden": true,
             "generator": "Ninja Multi-Config",
-            "binaryDir": "${sourceDir}/build",
-            "installDir": "${sourceDir}/install",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "installDir": "${sourceDir}/install/${presetName}",
             "toolchainFile": "${sourceDir}/../3rdparty/vcpkg/scripts/buildsystems/vcpkg.cmake",
             "cacheVariables": {
+                "BINARY_DIRECTORY": "${sourceDir}/bin/${presetName}",
+                "INSTALL_DIRECTORY": "${sourceDir}/install/${presetName}",
                 "CMAKE_CONFIGURATION_TYPES": "Debug;Release",
                 "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
                 "VCPKG_MANIFEST_DIR": "${sourceDir}/../shared",
                 "BUILD_SHARED_TESTS": "OFF",
-                "BUILD_SHARED_DEMOS": "OFF"
+                "BUILD_SHARED_DEMOS": "OFF",
+                "DYNAMIC_LINK_SHARED": "ON"
             }
         },
         {
@@ -43,29 +46,60 @@
         {
             "name": "windows-debug",
             "inherits": "windows",
-            "binaryDir": "${sourceDir}/build/windows-debug",
-            "installDir": "${sourceDir}/install/windows-debug",
             "cacheVariables": {
-                "BINARY_DIRECTORY": "${sourceDir}/bin/windows-debug",
-                "INSTALL_DIRECTORY": "${sourceDir}/install/windows-debug",
+                "DYNAMIC_LINK_SHARED": "OFF",
                 "LOGGING_MIN_COMPILED_VERBOSITY": "Debug"
-            },
-            "condition": {
-                "type": "equals",
-                "lhs": "${hostSystemName}",
-                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "windows-monolithic-debug",
+            "inherits": "windows-debug"
+        },
+        {
+            "name": "windows-dynamic-debug",
+            "inherits": "windows-debug",
+            "cacheVariables": {
+                "DYNAMIC_LINK_SHARED": "ON"
             }
         },
         {
             "name": "windows-release",
             "inherits": "windows",
-            "binaryDir": "${sourceDir}/build/windows-release",
-            "installDir": "${sourceDir}/install/windows-release",
             "cacheVariables": {
-                "BINARY_DIRECTORY": "${sourceDir}/bin/windows-release",
-                "INSTALL_DIRECTORY": "${sourceDir}/install/windows-release",
                 "LOGGING_MIN_COMPILED_VERBOSITY": "Log"
-            },
+            }
+        },
+        {
+            "name": "linux-debug",
+            "inherits": "linux",
+            "cacheVariables": {
+                "DYNAMIC_LINK_SHARED": "OFF",
+                "LOGGING_MIN_COMPILED_VERBOSITY": "Debug"
+            }
+        },
+        {
+            "name": "linux-monolithic-debug",
+            "inherits": "linux-debug"
+        },
+        {
+            "name": "linux-dynamic-debug",
+            "inherits": "linux-debug",
+            "cacheVariables": {
+                "DYNAMIC_LINK_SHARED": "ON"
+            }
+        },
+        {
+            "name": "linux-release",
+            "inherits": "linux",
+            "cacheVariables": {
+                "LOGGING_MIN_COMPILED_VERBOSITY": "Log"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "windows-build",
+            "hidden": true,
             "condition": {
                 "type": "equals",
                 "lhs": "${hostSystemName}",
@@ -73,15 +107,8 @@
             }
         },
         {
-            "name": "linux-debug",
-            "inherits": "linux",
-            "binaryDir": "${sourceDir}/build/linux-debug",
-            "installDir": "${sourceDir}/install/linux-debug",
-            "cacheVariables": {
-                "BINARY_DIRECTORY": "${sourceDir}/bin/linux-debug",
-                "INSTALL_DIRECTORY": "${sourceDir}/install/linux-debug",
-                "LOGGING_MIN_COMPILED_VERBOSITY": "Debug"
-            },
+            "name": "linux-build",
+            "hidden": true,
             "condition": {
                 "type": "equals",
                 "lhs": "${hostSystemName}",
@@ -89,40 +116,50 @@
             }
         },
         {
-            "name": "linux-release",
-            "inherits": "linux",
-            "binaryDir": "${sourceDir}/build/linux-release",
-            "installDir": "${sourceDir}/install/linux-release",
-            "cacheVariables": {
-                "BINARY_DIRECTORY": "${sourceDir}/bin/linux-release",
-                "INSTALL_DIRECTORY": "${sourceDir}/install/linux-release",
-                "LOGGING_MIN_COMPILED_VERBOSITY": "Log"
-            },
-            "condition": {
-                "type": "equals",
-                "lhs": "${hostSystemName}",
-                "rhs": "Linux"
-            }
-        }
-    ],
-    "buildPresets": [
-        {
             "name": "windows-debug",
+            "inherits": "windows-build",
             "configurePreset": "windows-debug",
             "configuration": "Debug"
         },
         {
+            "name": "windows-monolithic-debug",
+            "inherits": "windows-build",
+            "configurePreset": "windows-monolithic-debug",
+            "configuration": "Debug"
+        },
+        {
+            "name": "windows-dynamic-debug",
+            "inherits": "windows-build",
+            "configurePreset": "windows-dynamic-debug",
+            "configuration": "Debug"
+        },
+        {
             "name": "windows-release",
+            "inherits": "windows-build",
             "configurePreset": "windows-release",
             "configuration": "Release"
         },
         {
             "name": "linux-debug",
+            "inherits": "linux-build",
             "configurePreset": "linux-debug",
             "configuration": "Debug"
         },
         {
+            "name": "linux-monolithic-debug",
+            "inherits": "linux-build",
+            "configurePreset": "linux-monolithic-debug",
+            "configuration": "Debug"
+        },
+        {
+            "name": "linux-dynamic-debug",
+            "inherits": "linux-build",
+            "configurePreset": "linux-dynamic-debug",
+            "configuration": "Debug"
+        },
+        {
             "name": "linux-release",
+            "inherits": "linux-build",
             "configurePreset": "linux-release",
             "configuration": "Release"
         }
