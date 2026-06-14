@@ -13,7 +13,7 @@ setup instructions may differ depending on platform or ide
 
 ### windows
 
-install cmake, git, github cli, gcloud, go, ninja, terraform
+install cmake, git, gcloud, go, ninja, terraform
 ```
 	winget install -e --id Kitware.CMake
 	winget install -e --id Git.Git
@@ -26,10 +26,10 @@ install cmake, git, github cli, gcloud, go, ninja, terraform
 
 ### linux
 
-install cmake, git, go, ninja
+install cmake, git, ninja
 ```
 	sudo apt-get update
-	sudo apt-get install -y cmake git gh golang-go ninja-build
+	sudo apt-get install -y cmake git gh ninja-build
 ```
 
 ### vscode
