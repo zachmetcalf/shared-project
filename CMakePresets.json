@@ -15,8 +15,7 @@
                 "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
                 "VCPKG_MANIFEST_DIR": "${sourceDir}/../shared",
                 "BUILD_SHARED_TESTS": "OFF",
-                "BUILD_SHARED_DEMOS": "OFF",
-                "DYNAMIC_LINK_SHARED": "ON"
+                "BUILD_SHARED_DEMOS": "OFF"
             }
         },
         {
@@ -47,6 +46,7 @@
             "name": "windows-debug",
             "inherits": "windows",
             "cacheVariables": {
+                "VCPKG_TARGET_TRIPLET": "x64-windows-static-md",
                 "DYNAMIC_LINK_SHARED": "OFF",
                 "LOGGING_MIN_COMPILED_VERBOSITY": "Debug"
             }
@@ -59,12 +59,13 @@
             "name": "windows-dynamic-debug",
             "inherits": "windows-debug",
             "cacheVariables": {
+                "VCPKG_TARGET_TRIPLET": "x64-windows",
                 "DYNAMIC_LINK_SHARED": "ON"
             }
         },
         {
             "name": "windows-release",
-            "inherits": "windows",
+            "inherits": "windows-debug",
             "cacheVariables": {
                 "LOGGING_MIN_COMPILED_VERBOSITY": "Log"
             }
@@ -73,6 +74,7 @@
             "name": "linux-debug",
             "inherits": "linux",
             "cacheVariables": {
+                "VCPKG_TARGET_TRIPLET": "x64-linux",
                 "DYNAMIC_LINK_SHARED": "OFF",
                 "LOGGING_MIN_COMPILED_VERBOSITY": "Debug"
             }
@@ -90,7 +92,7 @@
         },
         {
             "name": "linux-release",
-            "inherits": "linux",
+            "inherits": "linux-debug",
             "cacheVariables": {
                 "LOGGING_MIN_COMPILED_VERBOSITY": "Log"
             }
