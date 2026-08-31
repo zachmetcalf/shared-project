@@ -13,23 +13,24 @@ setup instructions may differ depending on platform or ide
 
 ### windows
 
-install cmake, git, gcloud, go, ninja, terraform
+install cmake, git, github cli, gcloud, go, ninja, sccache, terraform
 ```
 	winget install -e --id Kitware.CMake
 	winget install -e --id Git.Git
 	winget install -e --id GitHub.cli
 	winget install -e --id Google.CloudSDK
 	winget install -e --id GoLang.Go
-	winget install -e --id Hashicorp.Terraform
 	winget install -e --id Ninja-build.Ninja
+	winget install -e --id Mozilla.sccache
+	winget install -e --id Hashicorp.Terraform
 ```
 
 ### linux
 
-install cmake, git, ninja
+install cmake, git, github cli, ninja, sccache
 ```
 	sudo apt-get update
-	sudo apt-get install -y cmake git gh ninja-build
+	sudo apt-get install -y cmake git gh ninja-build sccache
 ```
 
 ### vscode
