@@ -36,6 +36,10 @@
             "name": "linux",
             "inherits": "shared-project",
             "hidden": true,
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "clang",
+                "CMAKE_CXX_COMPILER": "clang++"
+            },
             "condition": {
                 "type": "equals",
                 "lhs": "${hostSystemName}",
