@@ -2,25 +2,21 @@
 
 @echo off
 title clean
+setlocal
 
 set cwd=%~dp0
 set projectdir=%cwd%..\..
 set shareddir=%projectdir%\..\shared
 
-pushd "%projectdir%"
+for %%i in (.vs bin build install) do (
+	if exist "%projectdir%\%%i" (
+		rmdir "%projectdir%\%%i" /s /q
+		if errorlevel 1 exit /b 1
+	)
+)
 
-if exist .vs rmdir .vs /s /q
-if exist bin rmdir bin /s /q
-if exist build rmdir build /s /q
-if exist install rmdir install /s /q
-
-popd
-
-pushd "%shareddir%\scripts\setup"
-
-call clean.bat
-
-popd
+call "%shareddir%\scripts\setup\clean.bat"
+if errorlevel 1 exit /b 1
 
 echo clean completed
 exit /b 0
