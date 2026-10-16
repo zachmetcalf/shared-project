@@ -12,6 +12,7 @@ nav_order: 3
 | :----------------: | :----------------: |
 | shared | [https://github.com/zachmetcalf/shared](https://github.com/zachmetcalf/shared) |
 | shared-project | [https://github.com/zachmetcalf/shared-project](https://github.com/zachmetcalf/shared-project) |
+| shared-services | [https://github.com/zachmetcalf/shared-services](https://github.com/zachmetcalf/shared-services) |
 
 ## libraries
 
@@ -25,7 +26,7 @@ nav_order: 3
 | iconfontcppheaders | [https://github.com/juliettef/IconFontCppHeaders](https://github.com/juliettef/IconFontCppHeaders) |
 | imgui | [https://github.com/ocornut/imgui](https://github.com/ocornut/imgui) |
 | implot | [https://github.com/epezent/implot](https://github.com/epezent/implot) |
-| rapidjson | [https://github.com/Tencent/rapidjson/](https://github.com/Tencent/rapidjson/) |
+| rapidjson | [https://github.com/Tencent/rapidjson](https://github.com/Tencent/rapidjson) |
 | sdl3 | [https://libsdl.org/](https://libsdl.org/) |
 | slack | [https://api.slack.com/methods](https://api.slack.com/methods) |
 | vcpkg | [https://github.com/microsoft/vcpkg](https://github.com/microsoft/vcpkg) |
