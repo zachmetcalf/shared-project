@@ -17,6 +17,8 @@ aux_links:
     - "https://github.com/zachmetcalf/shared"
   "shared-project":
     - "https://github.com/zachmetcalf/shared-project"
+  "shared-services":
+    - "https://github.com/zachmetcalf/shared-services"
 
 callouts:
   note:
