@@ -1,4 +1,7 @@
 <link id="dark-css" rel="stylesheet" href="{{ '/assets/css/just-the-docs-dark.css' | relative_url }}" disabled>
 <link rel="stylesheet" href="/assets/shared/site.css">
+{% if page.url == '/games/' %}
+<link rel="stylesheet" href="{{ '/assets/games/games.css' | relative_url }}">
+{% endif %}
 
 <script src="/assets/shared/theme.js"></script>
