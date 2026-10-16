@@ -4,7 +4,7 @@
         {
             "label": "shared-project: clean",
             "type": "shell",
-            "command": "./clean.sh",
+            "command": "bash ./clean.sh",
             "windows": {
                 "command": ".\\clean.bat"
             },

@@ -10,8 +10,22 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 indent_style = tab
 indent_size = 4
-tab_width = 4
 
-# windows
+# bat
 [*.bat]
 end_of_line = crlf
+
+# json
+[*.{code-workspace,json,jsonc}]
+indent_style = space
+indent_size = 4
+
+# terraform
+[*.{hcl,tf,tfvars}]
+indent_style = space
+indent_size = 2
+
+# yaml
+[*.{clang-tidy,yaml,yml}]
+indent_style = space
+indent_size = 2

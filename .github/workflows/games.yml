@@ -1,0 +1,66 @@
+# Copyright (c) 2026 Zach Metcalf. All Rights Reserved.
+
+name: Games
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: target
+        required: true
+        default: demo_imgui
+        type: choice
+        options:
+          - demo_imgui
+          - game_snake
+      run_id:
+        description: shared Web run ID
+        required: true
+        type: string
+
+permissions:
+  actions: write
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  import:
+    if: ${{ github.repository == 'zachmetcalf/shared-project' && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Import game
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_ID: ${{ inputs.run_id }}
+          SHARED_ACTIONS_TOKEN: ${{ secrets.SHARED_ACTIONS_TOKEN }}
+          TARGET: ${{ inputs.target }}
+        run: python docs/tools/games.py import --target "$TARGET" --run-id "$RUN_ID"
+
+      - name: Commit game selection
+        shell: bash
+        env:
+          GIT_AUTHOR_EMAIL: ${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com
+          GIT_AUTHOR_NAME: ${{ github.actor }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/_data/games.json
+          if ! git diff --cached --quiet; then
+            git commit -m "[automation] #games"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Run Pages
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run pages.yml --ref main
