@@ -40,7 +40,9 @@ jobs:
         shell: bash
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python docs/tools/games.py assemble --destination _site
+        run: |
+          sudo chown -R "$(id -u):$(id -g)" _site
+          python docs/tools/games.py assemble --destination _site
 
       - name: Upload artifacts
         if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
