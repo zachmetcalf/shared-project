@@ -1,1 +1,9 @@
-{}
+{
+    "snake": {
+        "asset": "game_snake-web.zip",
+        "release": "games-game_snake-38782205141-1",
+        "sha256": "43753121cfb6ddcb4a7f64b8bf68f676e566b977e030449ee0faaabb01edcced",
+        "target": "game_snake",
+        "title": "snake"
+    }
+}
