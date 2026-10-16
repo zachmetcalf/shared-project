@@ -8,12 +8,25 @@
 
 .games-gallery a {
 	display: grid;
-	gap: 0.5rem;
+	gap: 0.75rem;
+	color: inherit;
+	text-decoration: none;
 }
 
 .games-gallery a:focus-visible {
 	outline: 2px solid currentColor;
 	outline-offset: 4px;
+}
+
+.games-gallery h2 {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 1.25;
+}
+
+.games-gallery a:hover h2 {
+	text-decoration: underline;
 }
 
 .games-gallery img {
