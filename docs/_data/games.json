@@ -1,16 +1,12 @@
 {
     "imgui": {
-        "asset": "demo_imgui-web.zip",
-        "release": "games-demo_imgui-38786064193-1",
-        "sha256": "180191c04db9d857df0b3dff3f21f8a31fcb0bf970b474ce5a2d9d04513831d5",
         "target": "demo_imgui",
-        "title": "imgui"
+        "release": "games-demo_imgui-38786064193-1",
+        "sha256": "180191c04db9d857df0b3dff3f21f8a31fcb0bf970b474ce5a2d9d04513831d5"
     },
     "snake": {
-        "asset": "game_snake-web.zip",
-        "release": "games-game_snake-38782205141-1",
-        "sha256": "43753121cfb6ddcb4a7f64b8bf68f676e566b977e030449ee0faaabb01edcced",
         "target": "game_snake",
-        "title": "snake"
+        "release": "games-game_snake-38782205141-1",
+        "sha256": "43753121cfb6ddcb4a7f64b8bf68f676e566b977e030449ee0faaabb01edcced"
     }
 }
