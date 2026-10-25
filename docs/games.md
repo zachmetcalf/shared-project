@@ -9,10 +9,10 @@ permalink: /games/
 
 <div class="games-gallery">
 	{% for entry in site.data.games %}
-	{% assign game = entry[1] %}
-	<a href="{{ '/games/' | append: entry[0] | append: '/' | relative_url }}">
-		<h2>{{ game.title | escape }}</h2>
-		<img src="{{ '/assets/games/' | append: entry[0] | append: '.png' | relative_url }}" alt="">
+	{% assign slug = entry[0] %}
+	<a href="{{ '/games/' | append: slug | append: '/' | relative_url }}">
+		<h2>{{ slug | escape }}</h2>
+		<img src="{{ '/assets/games/' | append: slug | append: '.png' | relative_url }}" alt="">
 	</a>
 	{% endfor %}
 </div>
