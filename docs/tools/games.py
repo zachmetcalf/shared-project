@@ -16,8 +16,8 @@ from pathlib import Path, PurePosixPath
 SOURCE_REPOSITORY = "zachmetcalf/shared"
 MANIFEST_PATH = Path(__file__).resolve().parents[1] / "_data" / "games.json"
 TARGETS = {
-	"demo_imgui": ("imgui", "imgui"),
-	"game_snake": ("snake", "snake"),
+	"demo_imgui": "imgui",
+	"game_snake": "snake",
 }
 
 def log(message):
@@ -130,14 +130,17 @@ def read_manifest(path):
 		raise ValueError("games manifest must be an object")
 
 	for slug, selection in manifest.items():
-		if not isinstance(selection, dict):
+		if (
+			not isinstance(selection, dict)
+			or set(selection) != {"target", "release", "sha256"}
+		):
 			raise ValueError(f"invalid game selection: {slug}")
 
 		target = selection.get("target")
 		if (
 			not isinstance(target, str)
 			or target not in TARGETS
-			or TARGETS[target] != (slug, selection.get("title"))
+			or TARGETS[target] != slug
 		):
 			raise ValueError(f"unknown game selection: {slug}")
 
@@ -146,26 +149,20 @@ def read_manifest(path):
 			raise ValueError(f"invalid game release: {slug}")
 
 		digest = selection.get("sha256")
-		if (
-			selection.get("asset") != f"{target}-web.zip"
-			or not isinstance(digest, str)
-			or not re.fullmatch(r"[0-9a-f]{64}", digest)
-		):
+		if not isinstance(digest, str) or not re.fullmatch(r"[0-9a-f]{64}", digest):
 			raise ValueError(f"invalid game asset: {slug}")
 
 	return manifest
 
 def update_selection(path, target, tag, digest):
 	manifest = read_manifest(path)
-	slug, title = TARGETS[target]
+	slug = TARGETS[target]
 	manifest[slug] = {
-		"title": title,
 		"target": target,
 		"release": tag,
-		"asset": f"{target}-web.zip",
 		"sha256": digest,
 	}
-	path.write_text(json.dumps(manifest, indent=4, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
+	path.write_text(json.dumps(manifest, indent=4) + "\n", encoding="utf-8", newline="\n")
 
 def download_asset(repository, release, asset_name):
 	assets = [item for item in release["assets"] if item["name"] == asset_name]
@@ -236,10 +233,11 @@ def assemble(repository, destination, manifest_path=MANIFEST_PATH):
 	manifest = read_manifest(manifest_path)
 	packages = []
 	for slug, selection in manifest.items():
-		data = download_release_asset(repository, selection["release"], selection["asset"])
+		target = selection["target"]
+		data = download_release_asset(repository, selection["release"], f"{target}-web.zip")
 		if sha256(data) != selection["sha256"]:
 			raise ValueError(f"release checksum mismatch: {slug}")
-		packages.append((slug, selection["target"], read_package(data, selection["target"])))
+		packages.append((slug, target, read_package(data, target)))
 
 	for slug, target, files in packages:
 		for name, content in files.items():
