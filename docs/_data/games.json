@@ -6,7 +6,7 @@
     },
     "snake": {
         "target": "game_snake",
-        "release": "games-game_snake-38782205141-1",
-        "sha256": "43753121cfb6ddcb4a7f64b8bf68f676e566b977e030449ee0faaabb01edcced"
+        "release": "games-game_snake-40204044672-1",
+        "sha256": "454d0825b7c5197b34970454530fad41ac51a18996521098e2a8d03681d32f49"
     }
 }
