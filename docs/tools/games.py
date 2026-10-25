@@ -212,9 +212,9 @@ def import_game(repository, target, run_id, manifest_path=MANIFEST_PATH):
 	if not re.fullmatch(r"[1-9][0-9]*", run_id):
 		raise ValueError("source run ID must be a positive integer")
 
-	token = os.environ.get("SHARED_ACTIONS_TOKEN")
+	token = os.environ.get("ACTIONS_TOKEN")
 	if not token:
-		raise ValueError("SHARED_ACTIONS_TOKEN is required for importing artifacts")
+		raise ValueError("ACTIONS_TOKEN is required for importing artifacts")
 
 	run = read_api(f"repos/{SOURCE_REPOSITORY}/actions/runs/{run_id}", token=token)
 	pages = read_api(f"repos/{SOURCE_REPOSITORY}/actions/runs/{run_id}/artifacts?per_page=100", token=token, paginate=True)
