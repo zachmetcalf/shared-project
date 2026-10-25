@@ -1,6 +1,10 @@
 {
     "folders": [
         {
+            "name": "shared",
+            "path": "../shared"
+        },
+        {
             "name": "shared-project",
             "path": "."
         }
