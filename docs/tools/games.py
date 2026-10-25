@@ -150,7 +150,7 @@ def read_manifest(path):
 
 		digest = selection.get("sha256")
 		if not isinstance(digest, str) or not re.fullmatch(r"[0-9a-f]{64}", digest):
-			raise ValueError(f"invalid game asset: {slug}")
+			raise ValueError(f"invalid game checksum: {slug}")
 
 	return manifest
 
