@@ -40,7 +40,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RUN_ID: ${{ inputs.run_id }}
-          SHARED_ACTIONS_TOKEN: ${{ secrets.SHARED_ACTIONS_TOKEN }}
+          ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
           TARGET: ${{ inputs.target }}
         run: python docs/tools/games.py import --target "$TARGET" --run-id "$RUN_ID"
 
