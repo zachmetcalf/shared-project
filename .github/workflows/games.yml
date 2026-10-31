@@ -14,7 +14,11 @@ on:
           - demo_imgui
           - game_snake
       run_id:
-        description: shared Web run ID
+        description: run ID
+        required: true
+        type: string
+      version:
+        description: version
         required: true
         type: string
 
@@ -42,7 +46,8 @@ jobs:
           RUN_ID: ${{ inputs.run_id }}
           ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
           TARGET: ${{ inputs.target }}
-        run: python docs/tools/games.py import --target "$TARGET" --run-id "$RUN_ID"
+          VERSION: ${{ inputs.version }}
+        run: python docs/tools/games.py import --target "$TARGET" --run-id "$RUN_ID" --version "$VERSION"
 
       - name: Commit game selection
         shell: bash
