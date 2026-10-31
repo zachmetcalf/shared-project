@@ -4,7 +4,7 @@
         "sha256": "fa7489ec398d9f3eebda2a10209dd09991280a1a3e7611e2e9e8baf05ac57000"
     },
     "snake": {
-        "release": "games-game_snake-40204044672-1",
-        "sha256": "454d0825b7c5197b34970454530fad41ac51a18996521098e2a8d03681d32f49"
+        "release": "snake-v1.0.0",
+        "sha256": "461fd2578413d5286ee19b1474d2c817dce8c19438def156b478c3ead7be5fed"
     }
 }
