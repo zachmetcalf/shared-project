@@ -1,11 +1,9 @@
 {
     "imgui": {
-        "target": "demo_imgui",
         "release": "games-demo_imgui-38786064193-1",
         "sha256": "180191c04db9d857df0b3dff3f21f8a31fcb0bf970b474ce5a2d9d04513831d5"
     },
     "snake": {
-        "target": "game_snake",
         "release": "games-game_snake-40204044672-1",
         "sha256": "454d0825b7c5197b34970454530fad41ac51a18996521098e2a8d03681d32f49"
     }
