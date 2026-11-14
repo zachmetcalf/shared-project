@@ -99,6 +99,7 @@
             "name": "linux-dynamic-debug",
             "inherits": "linux-debug",
             "cacheVariables": {
+                "VCPKG_TARGET_TRIPLET": "x64-linux-dynamic",
                 "DYNAMIC_LINK_SHARED": "ON"
             }
         },
