@@ -58,21 +58,16 @@
             "name": "windows-debug",
             "inherits": "windows",
             "cacheVariables": {
-                "VCPKG_TARGET_TRIPLET": "x64-windows-static-md",
-                "DYNAMIC_LINK_SHARED": "OFF",
+                "VCPKG_TARGET_TRIPLET": "x64-windows",
                 "LOGGING_MIN_COMPILED_VERBOSITY": "Debug"
             }
         },
         {
             "name": "windows-monolithic-debug",
-            "inherits": "windows-debug"
-        },
-        {
-            "name": "windows-dynamic-debug",
             "inherits": "windows-debug",
             "cacheVariables": {
-                "VCPKG_TARGET_TRIPLET": "x64-windows",
-                "DYNAMIC_LINK_SHARED": "ON"
+                "VCPKG_TARGET_TRIPLET": "x64-windows-static-md",
+                "BUILD_MONOLITHIC": "ON"
             }
         },
         {
@@ -86,21 +81,16 @@
             "name": "linux-debug",
             "inherits": "linux",
             "cacheVariables": {
-                "VCPKG_TARGET_TRIPLET": "x64-linux",
-                "DYNAMIC_LINK_SHARED": "OFF",
+                "VCPKG_TARGET_TRIPLET": "x64-linux-dynamic",
                 "LOGGING_MIN_COMPILED_VERBOSITY": "Debug"
             }
         },
         {
             "name": "linux-monolithic-debug",
-            "inherits": "linux-debug"
-        },
-        {
-            "name": "linux-dynamic-debug",
             "inherits": "linux-debug",
             "cacheVariables": {
-                "VCPKG_TARGET_TRIPLET": "x64-linux-dynamic",
-                "DYNAMIC_LINK_SHARED": "ON"
+                "VCPKG_TARGET_TRIPLET": "x64-linux",
+                "BUILD_MONOLITHIC": "ON"
             }
         },
         {
@@ -143,12 +133,6 @@
             "configuration": "Debug"
         },
         {
-            "name": "windows-dynamic-debug",
-            "inherits": "windows-build",
-            "configurePreset": "windows-dynamic-debug",
-            "configuration": "Debug"
-        },
-        {
             "name": "windows-release",
             "inherits": "windows-build",
             "configurePreset": "windows-release",
@@ -164,12 +148,6 @@
             "name": "linux-monolithic-debug",
             "inherits": "linux-build",
             "configurePreset": "linux-monolithic-debug",
-            "configuration": "Debug"
-        },
-        {
-            "name": "linux-dynamic-debug",
-            "inherits": "linux-build",
-            "configurePreset": "linux-dynamic-debug",
             "configuration": "Debug"
         },
         {
