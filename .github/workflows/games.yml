@@ -12,6 +12,7 @@ on:
         type: choice
         options:
           - demo_imgui
+          - game_pathfinding
           - game_snake
       run_id:
         description: run ID

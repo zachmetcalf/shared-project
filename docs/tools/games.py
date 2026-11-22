@@ -17,6 +17,7 @@ SOURCE_REPOSITORY = "zachmetcalf/shared"
 MANIFEST_PATH = Path(__file__).resolve().parents[1] / "_data" / "games.json"
 TARGETS = {
 	"demo_imgui": "imgui",
+	"game_pathfinding": "pathfinding",
 	"game_snake": "snake",
 }
 TARGETS_BY_SLUG = {slug: target for target, slug in TARGETS.items()}
